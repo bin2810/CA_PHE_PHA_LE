@@ -1,0 +1,329 @@
+.main {
+    margin-top: 20px;
+}
+
+
+/*phần sản phẩm*/
+
+
+/* Căn chỉnh bố cục */
+
+.product_body {
+    display: flex;
+    margin: auto;
+}
+
+
+/* Menu bên trái */
+
+.product_menu {
+    width: 400px;
+    /* Chiều rộng cột menu */
+    height: 760px;
+    /*Chiều cao toàn màn hình */
+    position: fixed;
+    /* Cố định menu khi cuộn */
+    /* Đảm bảo menu nằm trên các phần tử khác */
+    padding: 20px;
+    top: 10;
+    margin-bottom: -1000000px;
+}
+
+
+/* Nội dung bên phải */
+
+.product_content {
+    margin-left: 350px;
+    /* Chừa khoảng trống cho menu */
+    padding: 20px;
+    width: calc(400% - 350px);
+    /* Điều chỉnh chiều rộng của content */
+}
+
+
+/* Styling cho sản phẩm (đơn giản) */
+
+.product_content {
+    margin-bottom: 0px;
+}
+
+.danhsach {
+    display: flex;
+}
+
+.list_sp li {
+    list-style-type: none;
+    padding: 5px;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.list_sp a {
+    display: inline-block;
+    /* Để áp dụng hiệu ứng dưới chữ */
+    position: relative;
+    /* Đặt relative để định vị pseudo-element */
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: 15px;
+    text-decoration: none;
+    color: var(--text-color);
+    transition: color 0.5s ease;
+    transition: transform 0.5s ease;
+}
+
+.list_sp a:hover {
+    color: var(--dark-green);
+}
+
+.list_sp a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    /* Đặt đường kẻ ở dưới cùng */
+    left: 0;
+    width: 0;
+    /* Bắt đầu từ 0 */
+    height: 2px;
+    /* Độ dày của border */
+    background-color: var(--dark-green);
+    /* Màu của border */
+    transition: width 0.4s ease;
+    /* Thời gian và kiểu chuyển động */
+}
+
+.list_sp a:hover::after {
+    width: 100%;
+    /* Khi hover, border mở rộng toàn bộ chiều rộng chữ */
+}
+
+.list_sp a:hover {
+    transform: scale(1.2);
+}
+
+.stick {
+    width: 1px;
+    height: 1000px;
+    background-color: brown;
+    margin: 10px 0 0 40px;
+}
+
+.product_content_1 {
+    margin-top: 10px;
+}
+
+.product_row_1 {
+    display: flex;
+}
+
+.product_col_1 {
+    width: 300px;
+    height: 450px;
+    border-radius: 10px;
+    background-color: var(--white-color);
+    transition: background-color 0.6s ease, transform 0.6s ease;
+    /* Thêm transition cho transform */
+}
+
+.product_col_2 {
+    width: 300px;
+    height: 450px;
+    border-radius: 10px;
+    background-color: var(--white-color);
+    transition: background-color 0.6s ease, transform 0.6s ease;
+    /* Thêm transition cho transform */
+}
+
+.product_col_3 {
+    width: 300px;
+    height: 450px;
+    border-radius: 10px;
+    background-color: var(--white-color);
+    transition: background-color 0.6s ease, transform 0.6s ease;
+    /* Thêm transition cho transform */
+}
+
+.product_col_1,
+.product_col_2,
+.product_col_3 {
+    margin: 25px;
+}
+
+.product_col_1:hover,
+.product_col_2:hover,
+.product_col_3:hover {
+    background-color: var(--dark-green);
+    transform: scale(1.1);
+}
+
+.tieu_de_product {
+    margin: 10px 10px 10px 25px;
+    font-size: 30px;
+    font-weight: normal;
+    scroll-margin-top: 100px;
+    /* Thêm khoảng cách phía trên khi cuộn */
+}
+
+.product_img {
+    width: 260px;
+    height: 260px;
+    margin: auto;
+    margin-top: 20px;
+    overflow: hidden;
+}
+
+.product_img img {
+    transition: transform 0.6s ease;
+}
+
+.product_img img:hover {
+    transform: scale(1.2);
+}
+
+.product_information {
+    width: 260px;
+    height: 260px;
+    margin: auto;
+}
+
+.product_information_content {
+    font-size: 18px;
+    color: var(--white-color);
+    font-weight: bold;
+}
+
+.product_information_money {
+    font-size: 16px;
+    margin: 5px 5px 5px 5px;
+    color: var(--white-color);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.product_information_button a {
+    color: var(--white-color);
+    width: 125px;
+    /* background-color: var(--white-color); */
+    height: 40px;
+    padding: 10px;
+    border-radius: 5%;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.5s ease, transform 0.5s ease;
+    /* Thêm transition cho transform */
+}
+
+.product_information_button a:hover {
+    background-color: var(--button-color);
+}
+
+
+/* FOOTER */
+
+.footer {
+    position: relative;
+}
+
+.footer_layout {
+    background-color: black;
+    height: 500px;
+    margin-top: 50px;
+    padding: 50px;
+    position: absolute;
+    bottom: -1;
+    right: 0;
+    left: 0;
+}
+
+.footer_row {
+    display: grid;
+    grid-template-columns: 20% 20% 30% 20%;
+    justify-content: space-evenly;
+}
+
+.footer_row p {
+    color: white;
+}
+
+.footer_content1 {
+    margin: 0 auto;
+    line-height: 20px;
+}
+
+.footer_content1 .topic_content1 p {
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.footer_content1 .content1 a {
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+.footer_content2 {
+    line-height: 20px;
+}
+
+.footer_content2 .topic_content2 {
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.footer_content2 .content2 {
+    width: 350px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+.footer_content3 {
+    margin: 0 auto;
+    line-height: 20px;
+}
+
+.footer_content3 .topic_content3 p {
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.footer_content3 .content3 {
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+.footer_content3 .content3 .searchemail {
+    height: 50px;
+    width: 250px;
+    border-radius: 26px;
+    border: 2px solid black;
+}
+
+.footer_content3 .content3 input::placeholder {
+    color: rgba(0, 0, 0, 0.5);
+    /* Màu đen với độ trong suốt 50% */
+    font-style: italic;
+    /* Đặt kiểu chữ in nghiêng (tuỳ chọn) */
+}
+
+.footer_content3 .content3 input:hover {
+    background-color: white;
+}
+
+.footer_layout hr {
+    margin-top: 30px;
+}
+
+.nsxPL p {
+    font-size: 15px;
+    font-weight: normal;
+    text-align: center;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* hết */

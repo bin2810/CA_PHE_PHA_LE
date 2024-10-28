@@ -1,0 +1,555 @@
+.backgroundnau {
+    background-color: var(--tuyen-dung);
+}
+
+.lop_phu_banner {
+    width: 100%;
+    height: 425px;
+    background-color: black;
+    position: absolute;
+    opacity: 0%;
+    top: 200;
+    transition: opacity 0.8s ease;
+    opacity: 40%;
+}
+
+.header_banner_shop h1 {
+    font-weight: normal;
+    position: absolute;
+    left: 50%;
+    top: 25%;
+    transform: translateX(-50%);
+    color: var(--white-color);
+}
+
+.header_banner_shop a {
+    font-weight: normal;
+    position: absolute;
+    left: 50%;
+    top: 35%;
+    transform: translateX(-50%);
+    color: var(--white-color);
+    padding: 12px 45px;
+    background-color: #c09785;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.5s ease, transform 0.5s ease;
+}
+
+.header_banner_shop a:hover {
+    background-color: var(--button-color);
+}
+
+.banner_scale img {
+    width: 100%;
+    height: 100%;
+}
+
+.banner_shop {
+    width: 100%;
+    height: 425px;
+    overflow: hidden;
+}
+.gtth_box a.active,
+.gtth_box a:hover{
+    background-color: black;
+    color: white;
+}
+.gtth_box_row {
+    display: flex;
+    justify-content: center;
+}
+
+.gtth_box {
+    margin: 20px 20px;
+    border: 2px solid black;
+}
+
+.gtth_box a {
+    padding: 15px 40px;
+    text-decoration: none;
+    color: var(--dark-color);
+    font-weight: bold;
+    display: block;
+    transition: background-color 0.5s ease, transform 0.5s ease;
+}
+
+.gtth_content_layout {
+    width: 1170px;
+    height: 370px;
+    margin: 0 auto;
+}
+
+.gtth_content_row {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    background-color: var(--white-color);
+}
+
+.gtth_img {
+    height: 310px;
+}
+
+.gtth_img img {
+    width: 520px;
+    height: 330px;
+}
+
+.gtth_content {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 650px;
+    height: 330px;
+}
+
+.content_quyenloi {
+    width: 950px;
+    margin: 0 auto;
+}
+
+.content_quyenloi p {
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+
+/* Box quyen loi */
+
+.quyenloi_box_row1 {
+    display: grid;
+    grid-template-columns: 20% 20% 20%;
+    justify-content: space-evenly;
+}
+
+
+/* Box quyen loi 1 */
+
+.quyenloi_box_row1 .quyenloi_box_col1 {
+    margin: 0 auto;
+    background-color: var(--white-color);
+    padding: 30px 100px;
+}
+
+.quyenloi_box_row1 .quyenloi_box_img1 {
+    display: flex;
+    justify-content: center;
+}
+
+.quyenloi_box_row1 .quyenloi_box_topic1 {
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 220px;
+}
+
+.quyenloi_box_topic1 p {
+    text-align: center;
+}
+
+
+/* Box quyen loi 2 */
+
+.quyenloi_box_row1 .quyenloi_box_col2 {
+    margin: 0 auto;
+    background-color: var(--white-color);
+    padding: 40px 100px;
+}
+
+.quyenloi_box_row1 .quyenloi_box_img2 {
+    display: flex;
+    justify-content: center;
+}
+
+.quyenloi_box_row1 .quyenloi_box_topic2 {
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 220px;
+}
+
+.quyenloi_box_topic2 p {
+    text-align: center;
+}
+
+
+/* Box quyen loi 3 */
+
+.quyenloi_box_row1 .quyenloi_box_col3 {
+    margin: 0 auto;
+    background-color: var(--white-color);
+    padding: 40px 100px;
+}
+
+.quyenloi_box_row1 .quyenloi_box_img3 {
+    display: flex;
+    justify-content: center;
+}
+
+.quyenloi_box_row1 .quyenloi_box_topic3 {
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 220px;
+}
+
+.quyenloi_box_topic3 p {
+    text-align: center;
+}
+
+
+/* Box quyen loi row 2 */
+
+
+/* Box quyen loi 1 */
+
+.quyenloi_box_row2 {
+    display: grid;
+    grid-template-columns: 40% 40%;
+    justify-content: center;
+    margin: 30px auto;
+    width: 1300px;
+}
+
+.quyenloi_box_row2 .quyenloi_box_col1 {
+    margin: 0 auto;
+    background-color: var(--white-color);
+    padding: 30px 130px;
+}
+
+.quyenloi_box_row2 .quyenloi_box_img1 {
+    display: flex;
+    justify-content: center;
+}
+
+.quyenloi_box_row2 .quyenloi_box_topic1 {
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 220px;
+}
+
+.quyenloi_box_topic1 p {
+    text-align: center;
+}
+
+
+/* Box quyen loi 2 */
+
+.quyenloi_box_row2 .quyenloi_box_col2 {
+    margin: 0 auto;
+    background-color: var(--white-color);
+    padding: 40px 130px;
+}
+
+.quyenloi_box_row2 .quyenloi_box_img2 {
+    display: flex;
+    justify-content: center;
+}
+
+.quyenloi_box_row2 .quyenloi_box_topic2 {
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 220px;
+}
+
+.quyenloi_box_topic2 p {
+    text-align: center;
+}
+
+.ungtuyenngay {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.ungtuyenngay a {
+    font-weight: normal;
+    color: var(--white-color);
+    padding: 20px 30px;
+    background-color: #c09785;
+    text-decoration: none;
+    transition: background-color 0.5s ease, transform 0.5s ease;
+}
+
+.ungtuyenngay a:hover {
+    background-color: var(--button-color);
+}
+
+
+/* STORY PHA LÊ */
+
+
+/* STORY PHA LÊ ROW 1 */
+
+.plstory_row1 {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+}
+
+.plstory_row1 .plstory_col {
+    height: 500px;
+    width: 400px;
+    margin: 0 20px;
+    padding: 22px 0;
+    background-color: var(--white-color);
+}
+
+.plstory_row1 .plstory_col .plstory_img {
+    display: flex;
+    justify-content: center;
+}
+
+.plstory_row1 .plstory_col .plstory_img img {
+    width: 350px;
+}
+
+.plstory_row1 .plstory_col .plstory_topic {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    text-align: center;
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+
+/* STORY PHA LÊ ROW 2 */
+
+.plstory_row2 {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 100px;
+}
+
+.plstory_row2 .plstory_col {
+    height: 500px;
+    width: 400px;
+    margin: 0 20px;
+    padding: 22px 0;
+    background-color: var(--white-color);
+}
+
+.plstory_row2 .plstory_col .plstory_img {
+    display: flex;
+    justify-content: center;
+}
+
+.plstory_row2 .plstory_col .plstory_img img {
+    width: 350px;
+}
+
+.plstory_row2 .plstory_col .plstory_topic {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    text-align: center;
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+
+/* FORM NHA */
+
+.form_background {
+    background-image: url(../image/tuyen_dung/backgroundform.PNG);
+    height: 900px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+}
+
+.makeCV {
+    font-size: 32px;
+    margin: 0;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--white-color);
+}
+
+.makeCV p {
+    text-align: center;
+}
+
+.form_layout {
+    width: 800px;
+    height: 750px;
+    background-color: var(--white-color);
+    padding: 20px;
+    margin: 0 auto;
+}
+
+.form_content_row1 {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px;
+}
+
+.form_content_row1 .name_content p {
+    margin: 7px 0;
+}
+
+.form_content_row1 .name_content input {
+    width: 300px;
+    height: 40px;
+}
+
+.form_content_row1 .number_content p {
+    margin: 7px 0;
+}
+
+.form_content_row1 .number_content input {
+    width: 300px;
+    height: 40px;
+}
+
+.form_content_row2 {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px;
+}
+
+.form_content_row2 .email_content p {
+    margin: 7px 0;
+}
+
+.form_content_row2 .email_content input {
+    width: 300px;
+    height: 40px;
+}
+
+.form_content_row2 .date_content p {
+    margin: 7px 0;
+}
+
+.form_content_row2 .date_content input {
+    width: 300px;
+    height: 40px;
+}
+
+.form_content_row3 {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.form_content_row3 .ungtuyen_content p {
+    margin: 7px 0;
+}
+
+.form_content_row4 {
+    display: flex;
+    padding: 10px;
+    margin-left: 40px;
+}
+
+.form_content_row4 .uploadcv_content p {
+    margin: 7px 0;
+}
+
+.nut_ungtuyen {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.nut_ungtuyen a {
+    font-weight: normal;
+    color: var(--white-color);
+    padding: 10px 285px;
+    background-color: #c09785;
+    text-decoration: none;
+    transition: background-color 0.5s ease, transform 0.5s ease;
+}
+
+.nut_ungtuyen a:hover {
+    background-color: var(--button-color);
+}
+
+
+/* THÊM PHẦN KHỐI VĂN PHÒNG  */
+
+.another_office {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+
+.another_office .khoivanphong_col {
+    margin: 0 30px;
+    padding: 30px;
+    box-shadow: 4px 4px 10px gray;
+}
+
+.another_office .khoicuahang_col {
+    margin: 0 30px;
+    padding: 30px;
+    box-shadow: 4px 4px 10px gray;
+}
+
+
+/* HÌNH ẢNH */
+
+.khoivanphong_col .khoivanphong_img img {
+    width: 500px;
+    height: 300px;
+    transition: transform 0.5s ease;
+}
+
+.khoivanphong_col .khoivanphong_img {
+    width: 500px;
+    height: 300px;
+    overflow: hidden;
+}
+
+.khoivanphong_col .khoivanphong_img img:hover {
+    transform: scale(1.1);
+}
+
+.khoicuahang_col .khoicuahang_img img {
+    width: 500px;
+    height: 300px;
+    transition: transform 0.5s ease;
+}
+
+.khoicuahang_col .khoicuahang_img {
+    width: 500px;
+    height: 300px;
+    overflow: hidden;
+}
+
+.khoicuahang_col .khoicuahang_img img:hover {
+    transform: scale(1.1);
+}
+
+.khoivanphong_col .khoivanphong_topic p {
+    font-size: 23px;
+    font-weight: bold;
+    margin: 15px 0px;
+}
+
+.khoicuahang_col .khoicuahang_topic p {
+    font-size: 23px;
+    font-weight: bold;
+    margin: 15px 0px;
+}
+
+.office_nut {
+    margin-top: 30px;
+}
+
+.office_nut a {
+    padding: 20px 30px;
+    text-decoration: none;
+    color: var(--white-color);
+    transition: background-color 0.5s ease, transform 0.5s ease;
+    background-color: #c09785;
+}
+
+.office_nut a:hover {
+    background-color: var(--button-color);
+}

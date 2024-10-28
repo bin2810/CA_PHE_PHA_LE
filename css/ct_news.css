@@ -1,0 +1,15 @@
+.tt_content_layout{
+    display: flex;
+    justify-content: center;
+}
+.tt_content_layout p{
+    width:1200px;
+    font-size: 20px;
+}
+.tt_content_col .tt_content_img{
+    display: flex;
+    justify-content: center;
+}
+.tt_content_col .tt_content_img img{
+    width: 650px;
+}

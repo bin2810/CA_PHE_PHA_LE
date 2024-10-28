@@ -1,0 +1,118 @@
+.header_lienhe_main{
+    margin: 100px 0;
+    margin-left: 50px;
+}
+
+.content_header_lienhe_main{
+    margin: 5px 0;
+    padding: 10px;
+}
+
+
+.Lien_He_img{
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+}
+
+.map_lienhe_main{
+    display: flex;
+}
+.phone_lienhe_main{
+    display: flex;
+}
+
+.icon_map_lien{
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    background-color: black;
+    margin: 0 10px;
+    position: relative;
+}
+
+.icon_map_lien img{
+    width: 25px;
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.icon_phone_lien{
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    background-color: black;
+    margin: 0 10px;
+    position: relative;
+}
+
+.icon_phone_lien img{
+    width: 25px;
+    position: absolute;
+    top: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+
+.content_map p{
+    margin: 0;
+}
+.content_map span{
+    font-weight: bold;
+}
+
+
+.form_lienhe_main{
+    margin: 20px 0 0 50px;
+}
+
+
+.form_lienhe_nen{
+    padding: 40px 50px 40px 60px;
+    box-shadow: 0px 3px 10px 5px rgba(0, 0, 0, 0.3); /* Bóng đậm và lan rộng */
+    margin: 20px 0;
+}
+
+.text_lienhe{
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 0.5px solid rgb(159, 158, 158);
+    font-size: 15px;
+}
+
+.text_lienhe:focus{
+    outline: none;
+}
+textarea{
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 0.5px solid rgb(159, 158, 158);
+}
+textarea:focus{
+    outline: none;
+}
+
+.button_lienhe{
+    width: 100%;
+    font-size: 20px;
+    color: black;
+    font-weight: bold;
+    padding: 15px;
+    border-radius: 50px;
+    border: none;
+    background-color: var(--white-color); /* Màu gradient chuyển từ cam sang vàng nhạt */
+    transition: background 0.4s ease;
+}
+
+.button_lienhe:hover{
+    color: var(--white-color);
+    background-color:var(--dark-green) /* Màu gradient chuyển từ cam sang vàng nhạt */
+}

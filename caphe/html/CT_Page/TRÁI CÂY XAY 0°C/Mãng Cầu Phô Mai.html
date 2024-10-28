@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="../../../css/bass.css">
+    <link rel="stylesheet" href="../../../css/main.css">
+    <link rel="stylesheet" href="../../../css/tintuc.css">
+    <link rel="stylesheet" href="../../../css/CT_Page.css">
+    <link rel="website icon" type="image/png" href="../../../image/trang_chủ/logo_google.png">
+    <script src="../../../js_jquery/jquery-3.7.1.min.js"></script>
+    <script src="../../../js_jquery/add_cart.js"></script>
+    <script src="../../../js_jquery/navbar.js"></script>
+    <script src="../../../js_jquery/login.js"></script>    <script src="../../../js_jquery/login.js"></script>
+    <title>Mãng Cầu Phô Mai</title>
+</head>
+
+<body>
+    <!-- Khoảng trống phía trên để nội dung không bị che bởi navbar -->
+    <div style="height: 72px;"></div>
+    <!-- Các phần còn lại của trang -->
+        <div class="big">
+        <!-- đăng nhập -->
+        <div id="lop_phu_login">
+            <div class="form_login">
+                <img src="../../../image/trang_chủ/login_img.jpg" alt="" class="img_login">
+                <h2>Chào mừng bạn đến với</h2>
+                <h3>PHA LE</h3>
+                <div class="khung_nhap_phone">
+                    <select name="" id="" class="quoc_ky">
+                        <option value="">VN +84</option>
+                    </select>
+                    <input type="number" placeholder="Nhập số điện thoại" class="nhap_phone">
+                </div>
+                <button class="nut_login">Đăng nhập</button>
+            </div>
+        </div>
+        <!--thêm giõ hàng  -->
+        <div id="lop_phu_sp">
+            <div class="form_sp">
+                <div class="sp-header">
+                    <div class="hd1-button">
+                        <button id="close-sp"><i class="fa-solid fa-xmark"></i></button>
+                    </div>
+                    <h4>Thêm món mới</h4>
+                    <div class="trong"></div>
+                </div>
+                <hr>
+                <div class="sp-main">
+                    <img src="../../../image/Chi_tiet_sp/SYPHON/O-Long-Nhai-Sua_-size-La.jpg" alt="">
+
+                    <h5>Ô LONG NHÀI SỮA (SIZE LA)</h5>
+                    <p>
+                        Ô Long Nhài Sữa là sự kết hợp hoàn hảo giừa Trà Ô Long Đặc Sản đậm đà cùng hương nhài thơm tinh tế, thêm chút thơm ngậy từ sữa.
+                    </p>
+                </div>
+                <div class="khung_nhap">
+                    <div class="sp-money">
+                        <div class="gia">
+                            <h2>60.000đ</h2>
+                        </div>
+
+                        <div class="sp-money-button">
+                            <button id="giam" class="btngiam "><i class="fa-solid fa-minus"></i></button>
+                            <input type="number" value="1" min="1" name="" id="hiensl" disabled>
+                            <button id="tang" class="btntang nenbtn"><i class="fa-solid fa-plus"></i></button>
+                        </div>
+                        <script>
+                            $(function() {
+                                $('#tang').click(function() {
+                                    var sl = parseInt($('#hiensl').val());
+
+                                    sl++;
+                                    if (sl > 1) {
+                                        $('.btngiam').addClass("nenbtn");
+                                    } else {
+                                        $('.btngiam').removeClass("nenbtn");
+                                    }
+
+                                    $('#hiensl').val(sl);
+                                });
+
+                                $('#giam').click(function() {
+                                    var sl = parseInt($('#hiensl').val());
+                                    if (sl > 1) {
+                                        sl--;
+                                        $('#hiensl').val(sl);
+                                    }
+                                    if (sl > 1) {
+                                        $('.btngiam').addClass("nenbtn");
+                                    } else {
+                                        $('.btngiam').removeClass("nenbtn");
+                                    }
+
+                                });
+                            });
+                        </script>
+                    </div>
+                </div>
+                <div class="note">
+                    <i class="fa-solid fa-note-sticky"></i>
+                    <input type="text" name="" id="" placeholder="Ghi chú thêm cho món này">
+                </div>
+                <div class="topping">
+                   <p style="color: white;font-weight: bold; text-align: center;">CHỌN SIZE (bắt buộc)</p>
+                    <div class="size">
+                        <p>
+                            <input type="radio" name="rdosize" id="">
+                            <p style="text-align: left;">Nhỏ + 0đ</p>
+                        </p>
+
+                        <p>
+                            <input type="radio" name="rdosize" id="">
+                            <p style="text-align: left;">Vừa + 4.000đ</p>
+                        </p>
+
+                        <p>
+                            <input type="radio" name="rdosize" id="">
+                            <p style="text-align: left;">Lớn + 14.000đ</p>
+                        </p>
+                    </div>
+                </div>
+
+                <button class="nut_giohang" id="btn_shopping">Thêm Vào Giõ Hàng</button>
+            </div>
+        </div>
+
+        <!-- thông báo -->
+        <div id="thong_bao_gio_hang" class="notification hidden">
+            <div class="icon">
+                <img src="../../../image/Product_img/tich.png" alt="">
+            </div>
+            <div class="message">
+                <strong>Thành công</strong><br>
+                Sản phẩm đã được thêm giỏ thành công.
+            </div>
+        </div>
+        </div>
+        <div class="header">
+            <div class="box">
+                <div class="grid">
+                    <div class="cangiua_nav">
+                        <div class="logo">
+                            <a href="../../index.html">
+                                <img src="../../../image/trang_chủ/logo_trang.png" class="logo_nav" alt="">
+                            </a>
+                        </div>
+                        <div class="nd_nav">
+                            <a href="../../Page_Product.html">
+                                <p>SẢN PHẨM</p>
+                            </a>
+                            <a href="../../tintuc.html">
+                                <p>TIN TỨC </p>
+                            </a>
+                            <a href="../../shop.html">
+                                <p>CỬA HÀNG</p>
+                            </a>
+                            <a href="../../tuyendung.html">
+                                <p>TUYỂN DỤNG</p>
+                            </a>
+                            <a href="../../Thanh_vien.html">
+                                <p>THẺ THÀNH VIÊN</p>
+                            </a>
+                            <a href="../../Lien_He.html">
+                                <p>LIÊN HỆ</p>
+                            </a>
+                        </div>
+                        <div class="icons">
+                            <button id="btnlogin" class="btnlogin">
+                                <img src="../../../image/trang_chủ/Login.png" width="50px" alt="">
+                            </button>
+
+                            <button id="shopping_cart" class="btn_shopping_cart"> <!-- nút giõ hàng -->
+                                <a href="../../checkout.html"><img src="../../../image/trang_chủ/Cartion.png" width="50px" alt=""></a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main">
+            <div class="grid">
+                <div class="product_layout">
+                    <div class="img_product">
+                        <span> <a href="../../../html/index.html">Pha Lê > </a> <a href="../../../html/Page_Product.html">Sản Phẩm > </a> Mãng Cầu Phô Mai  </span>
+                        <img src="../../../image/Chi_tiet_sp/TRÁI CÂY XAY 0 ĐỘ/Mãng Cầu Phô Mai.jpg" alt="">
+                    </div>
+                    <div class="information_product">
+                        <h2>Mãng Cầu Phô Mai</h2>
+                        <h3>45.000 đ</h3>
+                        <button id="btn-them">Mua Ngay</button>
+                    </div>
+                </div>
+
+                <div class="CT_sp">
+                    <h2>Chi Tiết Sản Phẩm</h2>
+                    <hr>
+                    <p>Mãng cầu Nam Bộ chín tự nhiên đậm vị, hòa quyện lớp foam phô mai tươi mềm mịn. Thêm chút Trà Xanh Tây Bắc êm dịu và thạch kim quất mềm tan càng dậy vị trái cây tươi mát. Khuấy đều để thưởng trọn vị sảng khoái.</p>
+                </div>
+
+                <div class="spnb_layout">
+                    <div class="text_of_topic" style="margin-top: 80px;">
+                        <p>SẢN PHẨM NỔI BẬT</p>
+                    </div>
+                    <div class=" spnb_row ">
+                        <!-- CỘT 1 -->
+                        <div class="spnb_col1 ">
+                            <div class="spnb_img1 ">
+                                <a href=" "><img src="../../../image/Tin_Tuc/caphesua.jpg " alt=" "></a>
+                            </div>
+                            <div class="spnb_topic1 ">
+                                TẤM
+                            </div>
+                            <div class="spnb_cost1 ">
+                                54.000đ
+                            </div>
+                            <div class="button_buy ">
+                                <a href=" ">Mua Ngay</a>
+                            </div>
+                        </div>
+                        <!-- CỘT 2 -->
+                        <div class="spnb_col2 ">
+                            <div class="spnb_img2 ">
+                                <a href=" "><img src="../../../image/Tin_Tuc/kenyaukkli.jpg " alt=" "></a>
+                            </div>
+                            <div class="spnb_topic2 ">
+                                PHÊ KENYA - TÚI 150GR
+                            </div>
+                            <div class="spnb_cost2 ">
+                                270.000đ
+                            </div>
+                            <div class="button_buy ">
+                                <a href=" ">Mua Ngay</a>
+                            </div>
+                        </div>
+                        <!-- CỘT 3 -->
+                        <div class="spnb_col3 ">
+                            <div class="spnb_img3 ">
+                                <a href=" "><img src="../../../image/Tin_Tuc/tam.jpg " alt=" "></a>
+                            </div>
+                            <div class="spnb_topic3 ">
+                                TẤM - (SIZE L)
+                            </div>
+                            <div class="spnb_cost3 ">
+                                69.000đ
+                            </div>
+                            <div class="button_buy ">
+                                <a href=" ">Mua Ngay</a>
+                            </div>
+                        </div>
+                        <!-- CỘT 4 -->
+                        <div class="spnb_col4 ">
+                            <div class="spnb_img4 ">
+                                <a href=" "><img src="../../../image/Tin_Tuc/olongnhai.jpg " alt=" "></a>
+                            </div>
+                            <div class="spnb_topic4 ">
+                                PLUS - O LONG NHÀI SỮA
+                            </div>
+                            <div class="spnb_cost4 ">
+                                108.000 đ
+                            </div>
+                            <div class="button_buy ">
+                                <a href=" ">Mua Ngay</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="footer_layout">
+                <div class="grid">
+                    <div class="footer_row">
+                        <div class="logo_col">
+                            <img src="../../../image/trang_chủ/logo_trang.png" alt="">
+                        </div>
+                        <div class="footer_content1">
+                            <div class="topic_content1">
+                                <p>VỀ CHÚNG TÔI</p>
+                            </div>
+                            <div class="content1">
+                                <a href="../../shop.html">
+                                    <p>> &nbsp; Cửa Hàng</p>
+                                </a>
+                                <a href="../../tuyendung.html">
+                                    <p>> &nbsp; Tuyển Dụng</p>
+                                </a>
+                                <a href="../../Lien_He.html">
+                                    <p>> &nbsp; Liên Hệ</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="footer_content2">
+                            <div class="topic_content2">
+                                <p>ĐỊA CHỈ CÔNG TY</p>
+                            </div>
+                            <div class="content2">
+                                <p class="cn1">Trụ sở chính:193 Nguyễn Thị Nhỏ, Phường 9, Tân Bình, TP. Hồ Chí Minh</p>
+                                <p class="cn2">Chi nhánh Đà Nẵng: 313 Lê Thanh Nghị, Hoà Cường Nam, Hải Châu, Đà Nẵng</p>
+                                <p class="cn3">Chi nhánh Hà Nội: 15h Ngõ 133 Nguyễn Trãi, Thượng Đình, Thanh Xuân, Hà Nội</p>
+                                <p class="topic_content2">EMAIL HỖ TRỢ KHÁCH HÀNG</p>
+                                <p class="email"> > &nbsp; cskh@phale.vn</p>
+                                <p class="topic_content2">HOTLINE HỖ TRỢ KHÁCH :</p>
+                                <p class="hotline">1900-3013 (8h30-23h)</p>
+                            </div>
+                        </div>
+                        <div class="footer_content3">
+                            <div class="topic_content3">
+                                <p class="infofromPL">NHẬN THÔNG TIN TỪ PHA LÊ</p>
+                            </div>
+                            <div class="content3">
+                                <p>
+                                    Xin vui lòng để lại địa chỉ ,chúng tôi sẽ cập nhật những tin tức mới nhất của Pha Lê
+                                </p>
+                                <div class="thanhsearch">
+                                    <input type="text" class="searchemail" id="email" placeholder="   Nhập Email Của Bạn...">
+                                    <input type="submit" class="nutgui" id="btn_email" value="Gửi">
+                                </div>
+                                <div id="thong_bao" style="display: none; border: 2px solid var(--button-color);font-weight: bold; text-align: center;  padding: 15px; margin-top: 50px;">
+                                    
+                                </div>
+
+                                <script>
+                                    $(document).ready(function() {
+                                        $('#btn_email').click(function() {
+
+                                            // Biểu thức regex kiểm tra định dạng email
+                                            var email_mau = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+                                            var email = $('#email').val();
+
+                                            // Kiểm tra email
+                                            if(email == ""){
+                                                $('#thong_bao').text('Vui lòng nhập email').css('color', 'white').fadeIn();
+                                                setTimeout(function() {
+                                                    $('#thong_bao').fadeOut();
+                                                }, 2000);  
+                                            }
+                                            else if (!email_mau.test(email)) {
+                                                $('#thong_bao').text('Vui lòng nhập lại email (vui lòng đúng định dạng gmail)').css('color', 'red').fadeIn();  
+                                                setTimeout(function(){
+                                                    $('#thong_bao').fadeOut();
+                                                },2000);
+                                            } else {
+                                                $('#thong_bao').text('Xin cảm ơn, gmail đã được gửi thành công.').css('color', 'rgb(8, 250, 8)').fadeIn(); // Hiển thị thông báo thành công
+
+                                                setTimeout(function() {
+                                                    $('#thong_bao').fadeOut();
+                                                }, 2000);
+                                            }
+                                        });
+                                    });
+
+                                </script>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="nsxPL">
+                    <p>@2020 Bản quyền này thuộc về công ty Cổ Phần Pha Lê</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

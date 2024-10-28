@@ -1,0 +1,52 @@
+.duongdan{
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    width: 500px;
+}
+.text_brown{
+    color: var(--button-color);
+}
+.line hr{
+    width: 87%;
+    height: 3px;
+    background-color: var(--button-color);
+}
+.indam{
+    font-weight: bold;      
+    font-size: 23px;
+}
+.detail_layout{
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+}
+table {
+    border-collapse: collapse;
+  }
+.detail_content_border table tr th{
+    width: 200px;
+    text-align: left;
+    
+}
+.detail_content_border table tr td{
+    width: 600px;
+    text-align: left;
+}
+table, th, td {
+    border-bottom: 1px solid black;
+    border-collapse: collapse;
+  }
+
+  th, td {
+    padding: 10px;
+  }
+  .detail_content_fix {
+    margin-top: 40px;
+}
+.detail_content_fix p{
+    margin: 5px 0px;
+    font-size: 15px;
+    line-height: 25px;
+    width: 800px;
+}

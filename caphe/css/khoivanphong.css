@@ -1,0 +1,52 @@
+.kvp_row {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.kvp_col {
+    margin: 0 40px;
+    padding: 20px;
+    box-shadow: 4px 4px 10px gray;
+}
+
+.kvp_col .kvp_img img {
+    width: 330px;
+    height: 220px;
+}
+
+.kvp_col .kvp_topic p {
+    font-weight: bold;
+    font-size: 20px;
+    margin: 0 0;
+}
+
+.kvp_col .kvp_content p {
+    margin: 10px 0;
+    width: 330px;
+}
+
+.kvp_col .kvp_content .indam {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.kvp_col .kvp_content p {
+    font-size: 19px;
+}
+
+.kvp_col .kvp_nut {
+    margin-top: 30px;
+}
+
+.kvp_col .kvp_nut a {
+    padding: 15px 30px;
+    background-color: var(--buttonbefore-color);
+    text-decoration: none;
+    color: var(--white-color);
+    transition: transform 0.5s ease, background-color 0.5s ease;
+}
+
+.kvp_col .kvp_nut a:hover {
+    background-color: var(--button-color);
+}

@@ -1,0 +1,43 @@
+:root {
+    --text-color: #333;
+    --dark-green: #8b9958;
+    --button-color: #BE7352;
+    --white-color: #ffff;
+    --black-color: #0000;
+    --tuyen-dung: #efe6d8;
+    --buttonbefore-color: #c09785;
+}
+
+* {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 100%;
+    line-height: 2rem;
+    scroll-behavior: smooth;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+.grid {
+    width: 1500px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.grid_thanhvien {
+    width: 1200px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.grid_check-out{
+    width: 1100px;
+    max-width: 100%;
+    margin: 0 auto;
+}

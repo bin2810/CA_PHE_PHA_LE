@@ -1,0 +1,22 @@
+.banner_thanh_vien{
+    width: 100%;
+    height: 450px;
+    overflow: hidden;
+}
+.clause{
+    margin: 50px 0 ;
+}
+.header_member p{
+    padding: 5px;
+}
+
+.bai_viet{
+    margin: 50px 0;
+}
+
+.bai_viet header{
+    margin: 40px 0;
+    padding: 10px 10px 10px 60px;
+    font-size: 25px;
+    font-weight: bold;
+}

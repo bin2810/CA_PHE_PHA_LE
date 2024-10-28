@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="website icon" type="image/png" href="../image/trang_chủ/logo_google.png">
+    <link rel="stylesheet" href="../css/bass.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/shop.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="../js_jquery/jquery-3.7.1.min.js"></script>
+    <script src="../js_jquery/store_search.js"></script>
+    <script src="../js_jquery/login.js"></script>
+    <script src="../js_jquery/navbar.js"></script>
+    <title>Cửa Hàng</title>
+</head>
+
+<body>
+    <div class="big">
+        <!-- đăng nhập -->
+        <div id="lop_phu_login">
+            <div class="form_login">
+                <img src="../image/trang_chủ/login_img.jpg" alt="" class="img_login">
+                <h2>Chào mừng bạn đến với</h2>
+                <h3>PHA LE</h3>
+                <div class="khung_nhap_phone">
+                    <select name="" id="" class="quoc_ky">
+                        <option value="">VN +84</option>
+                    </select>
+                    <input type="number" placeholder="Nhập số điện thoại" class="nhap_phone">
+                </div>
+                <button class="nut_login">Đăng nhập</button>
+            </div>
+        </div>
+        <div class="header">
+            <div class="box">
+                <div class="grid">
+                    <div class="cangiua_nav">
+                        <div class="logo">
+                            <a href="../html/index.html">
+                                <img src="../image/trang_chủ/logo_trang.png" class="logo_nav" alt="">
+                            </a>
+                        </div>
+                        <div class="nd_nav">
+                            <a href="../html/Page_Product.html">
+                                <p>SẢN PHẨM</p>
+                            </a>
+                            <a href="../html/tintuc.html">
+                                <p>TIN TỨC </p>
+                            </a>
+                            <a href="../html/shop.html">
+                                <p>CỬA HÀNG</p>
+                            </a>
+                            <a href="../html/tuyendung.html">
+                                <p>TUYỂN DỤNG</p>
+                            </a>
+                            <a href="../html/Thanh_vien.html">
+                                <p>THẺ THÀNH VIÊN</p>
+                            </a>
+                            <a href="../html/Lien_He.html">
+                                <p>LIÊN HỆ</p>
+                            </a>
+                        </div>
+                        <div class="icons">
+                            <button id="btnlogin" class="btnlogin">
+                                <img src="../image/trang_chủ/Login.png" width="50px" alt="">
+                            </button>
+
+                            <button id="shopping_cart" class="btn_shopping_cart"> <!-- nút giõ hàng -->
+                                <img src="../image/trang_chủ/Cartion.png" width="50px" alt="">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="banner_shop">
+                <div class="lop_phu_banner"></div>
+                <div class="header_banner_shop">
+                    <h1>Hệ Thống Cửa Hàng</h1>
+                </div>
+                <img src="../image/shop/banner_shop.jpg" width="100%" height="425px" alt="">
+            </div>
+            <!-- hết -->
+        </div>
+
+        <div class="main">
+            <div class="grid">
+                <div class="main_address_map">
+                    <div class="address">
+                        <h2 class="header_address">Tìm Kiếm Cửa Hàng</h2>
+                        <div class="dropdown_address">
+                            <h3 class="store_1">Chi nhánh Thành Phố Hồ Chí Minh</h3>
+                            <div class="content_store">
+                                <p class="content_store-1 open_HCM-1">
+                                    <i class="fa-sharp-duotone fa-solid fa-location-dot" style="font-size: 25px;"></i>
+                                    <span style="padding: 10px;"> 193 Nguyễn Thị Nhỏ, Phường 9, Tân Bình,<br> TP. Hồ Chí Minh</span>
+                                    <br>
+                                    Số điện thoại: 1900 3013
+                                </p>
+                                <hr>
+                                <p class="content_store-1 open_HCM-2">
+                                    <i class="fa-sharp-duotone fa-solid fa-location-dot" style="font-size: 25px;"></i>
+                                    <span style="padding: 10px;">206 Chiến Lược, Bình Trị Đông, Bình Tân,<br>TP. Hồ Chí Minh</span>
+                                    <br> Số điện thoại: 1900 3013
+                                </p>
+                                <hr>
+                                <p class="content_store-1 open_HCM-3">
+                                    <i class="fa-sharp-duotone fa-solid fa-location-dot" style="font-size: 25px;"></i>
+                                    <span style="padding: 10px;">77 Thiên Phước, Phường 15, Quận 11,<br> TP. Hồ Chí Minh</span>
+                                    <br> Số điện thoại: 1900 3013
+                                </p>
+                                <hr>
+                                <p class="content_store-1 open_HCM-4">
+                                    <i class="fa-sharp-duotone fa-solid fa-location-dot" style="font-size: 25px;"></i>
+                                    <span style="padding: 10px;">Huỳnh Văn Chính, Phú Trung, Tân Phú,<br>TP. Hồ Chí Minh</span>
+                                    <br> Số điện thoại: 1900 3013
+                                </p>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="dropdown_address">
+                            <h3 class="store_1">Chi nhánh Đà Nẵng</h3>
+                            <div class="content_store">
+                                <p class="content_store-1 open_DN-1">
+                                    <i class="fa-sharp-duotone fa-solid fa-location-dot" style="font-size: 25px;"></i>
+                                    <span style="padding: 10px;">313 Lê Thanh Nghị, Hoà Cường Nam Hải Châu, Đà Nẵng.</span>
+                                    <br> Số điện thoại: 1900 3013
+                                </p>
+                                <hr>
+                                <p class="content_store-1 open_DN-2">
+                                    <i class="fa-sharp-duotone fa-solid fa-location-dot" style="font-size: 25px;"></i>
+                                    <span style="padding: 10px;"> 12 Tôn Đản, Hoà An, Cẩm Lệ, Đà Nẵng.</span>
+                                    <br> Số điện thoại: 1900 3013
+                                </p>
+                                <hr>
+                                <p class="content_store-1 open_DN-3">
+                                    <i class="fa-sharp-duotone fa-solid fa-location-dot" style="font-size: 25px;"></i>
+                                    <span style="padding: 10px;">59 Văn Cận, Khuê Trung, Cẩm Lệ,<br> Đà Nẵng.</span>
+                                    <br> Số điện thoại: 1900 3013
+                                </p>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="dropdown_address">
+                            <h3 class="store_1">Chi nhánh Hà Nội</h3>
+                            <div class="content_store">
+                                <p class="content_store-1 open_HN-1">
+                                    <i class="fa-sharp-duotone fa-solid fa-location-dot" style="font-size: 25px;"></i>
+
+                                    <span style="padding: 10px;"> 15h Ngõ 133 Nguyễn Trãi, Thượng Đình, Thanh Xuân, Hà Nội</span>
+                                    <br> Số điện thoại: 1900 3013
+                                </p>
+                                <hr>
+                                <p class="content_store-1 open_HN-2">
+                                    <i class="fa-sharp-duotone fa-solid fa-location-dot" style="font-size: 25px;"></i>
+
+                                    <span style="padding: 10px;"> 65 Đ. Nguyễn Văn Huyên, Quan Hoa, Cầu Giấy, Hà Nội</span>
+                                    <br> Số điện thoại: 1900 3013
+                                </p>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="dropdown_address">
+                            <h3 class="store_1">Chi nhánh Lâm Đồng</h3>
+                            <div class="content_store">
+                                <p class="content_store-1 open_LĐ-1">
+                                    <i class="fa-sharp-duotone fa-solid fa-location-dot" style="font-size: 25px;"></i>
+                                    <span style="padding: 10px;"> Nam Ban, Lâm Hà, Lâm Đồng</span>
+                                    <br> Số điện thoại: 1900 3013
+                                    <hr>
+                                </p>
+                            </div>
+                        </div>
+                      
+                    </div>
+
+                    <div class="map">
+                        <div class="map_TPHCM-1 map_HCM-1">
+                            <iframe  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.5003514636173!2d106.65027107570327!3d10.772937659256751!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f80706b0ceb%3A0x623d282591245ff2!2sPha%20l%C3%AA%20S%C3%A0i%20G%C3%B2n%20-%20Phalesaigon.com.vn!5e0!3m2!1svi!2s!4v1728475563854!5m2!1svi!2s" width="850" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+
+                        <div class="map_TPHCM-1  map_HCM-2">
+                            <iframe  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.6431933985095!2d106.61105797570316!3d10.761957859459082!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752da12ee6c177%3A0x28a4463599679994!2zcGhhIGzDqg!5e0!3m2!1svi!2s!4v1728475702499!5m2!1svi!2s" width="850" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+
+                        <div class="map_TPHCM-1  map_HCM-3">
+                            <iframe  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.46787003554!2d106.65082587570332!3d10.775432859210724!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f34114e83f7%3A0xe94729188e5ed4d2!2zQ8OgIHBow6ogUGhhIEzDqg!5e0!3m2!1svi!2s!4v1728475902314!5m2!1svi!2s" width="850" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+
+                        <div class="map_TPHCM-1  map_HCM-4">
+                            <iframe  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7838.8213856835355!2d106.63888312014973!3d10.77982378352904!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752ebaa88f8cbb%3A0xf43b43dbb985cc6f!2zQ2Fmw6kgUGhhIEzDqg!5e0!3m2!1svi!2s!4v1728476015085!5m2!1svi!2s" width="850" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                        
+                        <div class="map_DANANG-1 map_DN-1">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3834.6193368409176!2d108.21619137575969!3d16.033319540396956!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x314219ec37a4d7e7%3A0x15cc34058831b461!2zUGhhIEzDqg!5e0!3m2!1svi!2s!4v1728786168730!5m2!1svi!2s" width="850" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                        <div class="map_DANANG-1 map_DN-2">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63157.3942287086!2d108.1758673625226!3d16.01537803065003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3142194091b124e9%3A0xc98ddd64e5e27cb1!2zUXXDoW4gY8OgIHBow6ogS2VtIFBoYSBMw6o!5e0!3m2!1svi!2s!4v1728786350016!5m2!1svi!2s" width="850" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                        <div class="map_DANANG-1 map_DN-3">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d25794.93709970759!2d108.16153855957177!3d16.04263592229061!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3142199377641aa1%3A0xe75220abcb10ea3e!2zUGhhIEzDqg!5e0!3m2!1svi!2s!4v1728786451978!5m2!1svi!2s" width="850" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+
+                        <div class="map_HANOI-1 map_HN-1">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1862.4229442232659!2d105.81424216232672!3d20.998813866922546!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135addfce8fd89f%3A0x839ea1290c2a48b0!2zUGhhIGzDqiBIw6AgTuG7mWk!5e0!3m2!1svi!2s!4v1728786640522!5m2!1svi!2s" width="850" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                        <div class="map_HANOI-1 map_HN-2">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3723.9233582686225!2d105.79591751606219!3d21.035752414630352!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ab389e1457e3%3A0xba93928ee73f6cb1!2zUGhhIEzDqg!5e0!3m2!1svi!2s!4v1728786695739!5m2!1svi!2s" width="850" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                        
+                        <div class="map_LAMDONG-1 map_LĐ-1">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d33740.451621827284!2d108.32200307269756!3d11.840263035547734!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31716a1b549df0f1%3A0x3d1b7765d02415d7!2sPha%20L%C3%AA%20Hj!5e0!3m2!1svi!2s!4v1728786744983!5m2!1svi!2s" width="850" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                        
+
+
+                    </div>
+                </div>
+
+                <div class="information_shop">
+                    <div class="information_shop_Ho_Chi_Minh">
+                        <header class="District">Thành Phố Hồ Chí Minh</header>
+                        <hr class="line">
+                        <div class="informatin_shop_TPHCM-col1">
+                            <div class="TPHCM_col-1">
+                                <h2>Quận Tân Bình</h2>
+                                <div class="content_information-TPHCM">
+                                    <div class="img_icon">
+                                        <img src="../image/shop/mapnho.png" alt="">
+                                    </div>
+                                    <a href=""> 193 Nguyễn Thị Nhỏ, Phường 9, Tân Bình, TP. Hồ Chí Minh</a>
+                                </div>
+                                <span class="hotline">Số điện thoại: 1900 3013</span>
+
+                            </div>
+                            <div class="TPHCM_col-1">
+                                <h2>Quận Bình Tân</h2>
+                                <div class="content_information-TPHCM">
+                                    <div class="img_icon">
+                                        <img src="../image/shop/mapnho.png" alt="">
+                                    </div>
+                                    <a href=""> 206 Chiến Lược, Bình Trị Đông, Bình Tân, Hồ Chí Minh</a>
+
+                                </div>
+                                <span class="hotline">Số điện thoại: 1900 3013</span>
+                            </div>
+                        </div>
+
+                        <div class="informatin_shop_TPHCM-col2">
+                            <div class="TPHCM_col-1">
+                                <h2>Quận 11</h2>
+                                <div class="content_information-TPHCM">
+                                    <div class="img_icon">
+                                        <img src="../image/shop/mapnho.png" alt="">
+                                    </div>
+                                    <a href=""> 77 Thiên Phước, Phường 15, Quận 11, TP. Hồ Chí Minh</a>
+                                </div>
+                                <span class="hotline">Số điện thoại: 1900 3013</span>
+
+                            </div>
+                            <div class="TPHCM_col-1">
+                                <h2>Quận Tân Phú</h2>
+                                <div class="content_information-TPHCM">
+                                    <div class="img_icon">
+                                        <img src="../image/shop/mapnho.png" alt="">
+                                    </div>
+                                    <a href=""> Chung Cư, Huỳnh Văn Chính, Phú Trung, Tân Phú, Hồ Chí Minh</a>
+
+                                </div>
+                                <span class="hotline">Số điện thoại: 1900 3013</span>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                    <div class="information_shop_Da_Nang">
+                        <header class="District">Đà Nẵng</header>
+                        <hr class="line">
+                        <div class="informatin_shop_TPHCM-col1">
+                            <div class="TPHCM_col-1">
+                                <h2>Quận Hải Châu</h2>
+                                <div class="content_information-TPHCM">
+                                    <div class="img_icon">
+                                        <img src="../image/shop/mapnho.png" alt="">
+                                    </div>
+                                    <a href="">313 Lê Thanh Nghị, Hoà Cường Nam, Hải Châu, Đà Nẵng</a>
+                                </div>
+                                <span class="hotline">Số điện thoại: 1900 3013</span>
+
+                            </div>
+                            <div class="TPHCM_col-1">
+                                <h2>Quận Cẩm Lệ</h2>
+                                <div class="content_information-TPHCM">
+                                    <div class="img_icon">
+                                        <img src="../image/shop/mapnho.png" alt="">
+                                    </div>
+                                    <a href="">313 Lê Thanh Nghị, Hoà Cường Nam, Hải Châu, Đà Nẵng</a>
+                                </div>
+                                <span class="hotline">Số điện thoại: 1900 3013</span>
+
+                                <div class="content_information-TPHCM">
+                                    <div class="img_icon">
+                                        <img src="../image/shop/mapnho.png" alt="">
+                                    </div>
+                                    <a href=""> 59 Văn Cận, Khuê Trung, Cẩm Lệ, Đà Nẵng</a>
+                                </div>
+                                <span class="hotline">Số điện thoại: 1900 3013</span>
+
+                            </div>
+                        </div>
+                        <div class="informatin_shop_TPHCM-col3" style="margin-left: 80px;">
+                            <div class="TPHCM_col-1">
+                                <h2>Quận 11</h2>
+                                <div class="content_information-TPHCM">
+                                    <div class="img_icon">
+                                        <img src="../image/shop/mapnho.png" alt="">
+                                    </div>
+                                    <a href=""> Chung Cư, Huỳnh Văn Chính, Phú Trung, Tân Phú, Hồ Chí Minh</a>
+
+                                </div>
+                                <span class="hotline">Số điện thoại: 1900 3013</span>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="information_shop_Ha_Noi">
+                        <header class="District">Thủ Đô Hà Nội</header>
+                        <hr class="line">
+                        <div class="informatin_shop_TPHCM-col1">
+                            <div class="TPHCM_col-1">
+                                <h2>Quận Thanh Xuân</h2>
+                                <div class="content_information-TPHCM">
+                                    <div class="img_icon">
+                                        <img src="../image/shop/mapnho.png" alt="">
+                                    </div>
+                                    <a href="">15h Ngõ 133 Nguyễn Trãi, Thượng Đình, Thanh Xuân, Hà Nội</a>
+                                </div>
+                                <span class="hotline">Số điện thoại: 1900 3013</span>
+
+                            </div>
+                            <div class="TPHCM_col-1">
+                                <h2>Quận Cầu Giấy</h2>
+                                <div class="content_information-TPHCM">
+                                    <div class="img_icon">
+                                        <img src="../image/shop/mapnho.png" alt="">
+                                    </div>
+                                    <a href=""> 65 Đ. Nguyễn Văn Huyên, Quan Hoa, Cầu Giấy, Hà Nội</a>
+                                </div>
+                                <span class="hotline">Số điện thoại: 1900 3013</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="information_shop_Ha_Noi">
+                        <header class="District">Lâm Đồng</header>
+                        <hr class="line">
+                        <div class="informatin_shop_TPHCM-col1">
+                            <div class="TPHCM_col-1">
+                                <h2>Quận Lâm Hà</h2>
+                                <div class="content_information-TPHCM">
+                                    <div class="img_icon">
+                                        <img src="../image/shop/mapnho.png" alt="">
+                                    </div>
+                                    <a href="">Nam Ban, Lâm Hà, Lâm Đồng, Việt Nam</a>
+                                </div>
+                                <span class="hotline">Số điện thoại: 1900 3013</span>
+
+                            </div>
+                            <div class="TPHCM_col-1">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="footer_layout">
+                <div class="grid">
+                    <div class="footer_row">
+                        <div class="logo_col">
+                            <img src="../image/trang_chủ/logo_trang.png" alt="">
+                        </div>
+                        <div class="footer_content1">
+                            <div class="topic_content1">
+                                <p>VỀ CHÚNG TÔI</p>
+                            </div>
+                            <div class="content1">
+                                <a href="../html/shop.html">
+                                    <p>> &nbsp; Cửa Hàng</p>
+                                </a>
+                                <a href="../html/tuyendung.html">
+                                    <p>> &nbsp; Tuyển Dụng</p>
+                                </a>
+                                <a href="../html/Lien_He.html">
+                                    <p>> &nbsp; Liên Hệ</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="footer_content2">
+                            <div class="topic_content2">
+                                <p>ĐỊA CHỈ CÔNG TY</p>
+                            </div>
+                            <div class="content2">
+                                <p class="cn1">Trụ sở chính:193 Nguyễn Thị Nhỏ, Phường 9, Tân Bình, TP. Hồ Chí Minh</p>
+                                <p class="cn2">Chi nhánh Đà Nẵng: 313 Lê Thanh Nghị, Hoà Cường Nam, Hải Châu, Đà Nẵng</p>
+                                <p class="cn3">Chi nhánh Hà Nội: 15h Ngõ 133 Nguyễn Trãi, Thượng Đình, Thanh Xuân, Hà Nội</p>
+                                <p class="topic_content2">EMAIL HỖ TRỢ KHÁCH HÀNG</p>
+                                <p class="email"> > &nbsp; cskh@phale.vn</p>
+                                <p class="topic_content2">HOTLINE HỖ TRỢ KHÁCH :</p>
+                                <p class="hotline">1900-3013 (8h30-23h)</p>
+                            </div>
+                        </div>
+                        <div class="footer_content3">
+                            <div class="topic_content3">
+                                <p class="infofromPL">NHẬN THÔNG TIN TỪ PHA LÊ</p>
+                            </div>
+                            <div class="content3">
+                                <p>
+                                    Xin vui lòng để lại địa chỉ ,chúng tôi sẽ cập nhật những tin tức mới nhất của Pha Lê
+                                </p>
+                                <div class="thanhsearch">
+                                    <input type="text" class="searchemail" id="email" placeholder="   Nhập Email Của Bạn...">
+                                    <input type="submit" class="nutgui" id="btn_email" value="Gửi">
+                                </div>
+                                <div id="thong_bao" style="display: none; border: 2px solid var(--button-color);font-weight: bold; text-align: center;  padding: 15px; margin-top: 50px;">
+                                    
+                                </div>
+
+                                <script>
+                                    $(document).ready(function() {
+                                        $('#btn_email').click(function() {
+
+                                            // Biểu thức regex kiểm tra định dạng email
+                                            var email_mau = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+                                            var email = $('#email').val();
+
+                                            // Kiểm tra email
+                                            if(email == ""){
+                                                $('#thong_bao').text('Vui lòng nhập email').css('color', 'white').fadeIn();
+                                                setTimeout(function() {
+                                                    $('#thong_bao').fadeOut();
+                                                }, 2000);  
+                                            }
+                                            else if (!email_mau.test(email)) {
+                                                $('#thong_bao').text('Vui lòng nhập lại email (vui lòng đúng định dạng gmail)').css('color', 'red').fadeIn();  
+                                                setTimeout(function(){
+                                                    $('#thong_bao').fadeOut();
+                                                },2000);
+                                            } else {
+                                                $('#thong_bao').text('Xin cảm ơn, gmail đã được gửi thành công.').css('color', 'rgb(8, 250, 8)').fadeIn(); // Hiển thị thông báo thành công
+
+                                                setTimeout(function() {
+                                                    $('#thong_bao').fadeOut();
+                                                }, 2000);
+                                            }
+                                        });
+                                    });
+
+                                </script>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="nsxPL">
+                    <p>@2020 Bản quyền này thuộc về công ty Cổ Phần Pha Lê</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

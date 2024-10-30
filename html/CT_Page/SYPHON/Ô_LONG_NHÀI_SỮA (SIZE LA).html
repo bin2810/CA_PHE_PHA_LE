@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="../../../css/tintuc.css">
     <link rel="stylesheet" href="../../../css/CT_Page.css">
     <link rel="website icon" type="image/png" href="../../../image/trang_chủ/logo_google.png">
-    <script src="../../../js_jquery/jquery-3.7.1.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="../../../js_jquery/add_cart.js"></script>
     <script src="../../../js_jquery/navbar.js"></script>
     <script src="../../../js_jquery/login.js"></script>
@@ -39,7 +39,7 @@
                 <button class="nut_login">Đăng nhập</button>
             </div>
         </div>
-        
+
         <!--thêm giõ hàng  -->
         <div id="lop_phu_sp">
             <div class="form_sp">
@@ -136,8 +136,7 @@
                 <img src="../../../image/Product_img/tich.png" alt="">
             </div>
             <div class="message">
-                <strong>Thành công</strong><br>
-                Sản phẩm đã được thêm giỏ thành công.
+                <strong>Thành công</strong><br> Sản phẩm đã được thêm giỏ thành công.
             </div>
         </div>
 
@@ -151,22 +150,22 @@
                             </a>
                         </div>
                         <div class="nd_nav">
-                            <a href="../../Page_Product.html">
+                            <a href="/html/CT_Page/Page_Product.html">
                                 <p>SẢN PHẨM</p>
                             </a>
-                            <a href="../../tintuc.html">
+                            <a href="/html/CT_News/tintuc.html">
                                 <p>TIN TỨC </p>
                             </a>
-                            <a href="../../shop.html">
+                            <a href="../html/shop.html">
                                 <p>CỬA HÀNG</p>
                             </a>
-                            <a href="../../tuyendung.html">
+                            <a href="/html/CT_Office/tuyendung.html">
                                 <p>TUYỂN DỤNG</p>
                             </a>
-                            <a href="../../Thanh_vien.html">
+                            <a href="../html/Thanh_vien.html">
                                 <p>THẺ THÀNH VIÊN</p>
                             </a>
-                            <a href="../../Lien_He.html">
+                            <a href="../html/Lien_He.html">
                                 <p>LIÊN HỆ</p>
                             </a>
                         </div>
@@ -188,7 +187,7 @@
                 <div class="product_layout">
                     <div class="img_product">
                         <span> <a href="../../../html/index.html">Pha Lê > </a> <a href="../../../html/Page_Product.html">Sản Phẩm > </a> Ô LONG NHÀI SỮA (SIZE LA)  </span>
-                        <img src="../../../image/Chi_tiet_sp/SYPHON/O-Long-Nhai-Sua_-size-La.jpg" alt="">
+                        <img src="../../../image/Chi_tiet_sp/Syphon/O-Long-Nhai-Sua_-size-La.jpg" alt="">
                     </div>
                     <div class="information_product">
                         <h2>Ô LONG NHÀI SỮA (SIZE LA)</h2>
@@ -322,7 +321,7 @@
                                     <input type="submit" class="nutgui" id="btn_email" value="Gửi">
                                 </div>
                                 <div id="thong_bao" style="display: none; border: 2px solid var(--button-color);font-weight: bold; text-align: center;  padding: 15px; margin-top: 50px;">
-                                    
+
                                 </div>
 
                                 <script>
@@ -334,17 +333,16 @@
                                             var email = $('#email').val();
 
                                             // Kiểm tra email
-                                            if(email == ""){
+                                            if (email == "") {
                                                 $('#thong_bao').text('Vui lòng nhập email').css('color', 'white').fadeIn();
                                                 setTimeout(function() {
                                                     $('#thong_bao').fadeOut();
-                                                }, 2000);  
-                                            }
-                                            else if (!email_mau.test(email)) {
-                                                $('#thong_bao').text('Vui lòng nhập lại email (vui lòng đúng định dạng gmail)').css('color', 'red').fadeIn();  
-                                                setTimeout(function(){
+                                                }, 2000);
+                                            } else if (!email_mau.test(email)) {
+                                                $('#thong_bao').text('Vui lòng nhập lại email (vui lòng đúng định dạng gmail)').css('color', 'red').fadeIn();
+                                                setTimeout(function() {
                                                     $('#thong_bao').fadeOut();
-                                                },2000);
+                                                }, 2000);
                                             } else {
                                                 $('#thong_bao').text('Xin cảm ơn, gmail đã được gửi thành công.').css('color', 'rgb(8, 250, 8)').fadeIn(); // Hiển thị thông báo thành công
 
@@ -354,7 +352,6 @@
                                             }
                                         });
                                     });
-
                                 </script>
                             </div>
                         </div>

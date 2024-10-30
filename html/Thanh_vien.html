@@ -9,14 +9,14 @@
     <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="../css/tintuc.css">
     <link rel="stylesheet" href="../css/Thanh_vien.css">
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="../js_jquery/login.js"></script>
     <script src="../js_jquery/navbar.js"></script>
     <title>Thẻ Thành Viên</title>
 </head>
 
 <body>
-    
+
     <!-- Khoảng trống phía trên để nội dung không bị che bởi navbar -->
     <div style="height: 72px;"></div>
     <!-- Các phần còn lại của trang -->
@@ -43,7 +43,7 @@
                 <div class="grid">
                     <div class="cangiua_nav">
                         <div class="logo">
-                           <a href="/index.html">
+                            <a href="/index.html">
                                 <img src="../image/trang_chủ/logo_trang.png" class="logo_nav" alt="">
                             </a>
                         </div>
@@ -264,7 +264,7 @@
                                     <input type="submit" class="nutgui" id="btn_email" value="Gửi">
                                 </div>
                                 <div id="thong_bao" style="display: none; border: 2px solid var(--button-color);font-weight: bold; text-align: center;  padding: 15px; margin-top: 50px;">
-                                    
+
                                 </div>
 
                                 <script>
@@ -276,17 +276,16 @@
                                             var email = $('#email').val();
 
                                             // Kiểm tra email
-                                            if(email == ""){
+                                            if (email == "") {
                                                 $('#thong_bao').text('Vui lòng nhập email').css('color', 'white').fadeIn();
                                                 setTimeout(function() {
                                                     $('#thong_bao').fadeOut();
-                                                }, 2000);  
-                                            }
-                                            else if (!email_mau.test(email)) {
-                                                $('#thong_bao').text('Vui lòng nhập lại email (vui lòng đúng định dạng gmail)').css('color', 'red').fadeIn();  
-                                                setTimeout(function(){
+                                                }, 2000);
+                                            } else if (!email_mau.test(email)) {
+                                                $('#thong_bao').text('Vui lòng nhập lại email (vui lòng đúng định dạng gmail)').css('color', 'red').fadeIn();
+                                                setTimeout(function() {
                                                     $('#thong_bao').fadeOut();
-                                                },2000);
+                                                }, 2000);
                                             } else {
                                                 $('#thong_bao').text('Xin cảm ơn, gmail đã được gửi thành công.').css('color', 'rgb(8, 250, 8)').fadeIn(); // Hiển thị thông báo thành công
 
@@ -296,7 +295,6 @@
                                             }
                                         });
                                     });
-
                                 </script>
                             </div>
                         </div>

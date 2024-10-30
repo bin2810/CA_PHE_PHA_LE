@@ -187,13 +187,34 @@
 }
 
 .product_information_content {
-    font-size: 18px;
-    color: var(--white-color);
+    font-size: 16px;
+    color: var(--dark-green);
     font-weight: bold;
+    transition: 0.4s ease;
+}
+
+.demo1 {
+    text-align: center;
+}
+
+.move-left {
+    text-align: left;
+    /* Đưa tên sản phẩm sang bên trái */
+    transform: translateX(-10px);
+    /* Di chuyển sang bên trái */
+    transition: transform 0.4s ease;
+    /* Thêm hiệu ứng chuyển tiếp */
+    margin-left: 13px;
+}
+
+.demo2 {
+    color: var(--white-color);
+    transition: color 0.4s ease, transform 0.4s ease;
+    /* Thêm hiệu ứng chuyển tiếp cho màu sắc */
 }
 
 .product_information_money {
-    font-size: 16px;
+    font-size: 15px;
     margin: 5px 5px 5px 5px;
     color: var(--white-color);
     font-weight: bold;
@@ -204,6 +225,7 @@
     color: var(--white-color);
     width: 125px;
     /* background-color: var(--white-color); */
+    font-size: 14px;
     height: 40px;
     padding: 10px;
     border-radius: 5%;

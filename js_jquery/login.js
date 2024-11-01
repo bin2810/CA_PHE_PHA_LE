@@ -1,24 +1,23 @@
 $(function() {
-    $("#lop_phu_login").hide(); // ẩn form 
+    // Tải nội dung của login.html
+    $.get('/html/login.html', function(data) {
+        $('body').append(data);
 
+        // Ẩn form mặc định (nếu cần)
+        $("#lop_phu_login").hide();
 
-    $("#btnlogin").click(function() {
-        $("#lop_phu_login").fadeIn(); // Hiển thị form 
-        $('body').addClass('lock-scroll'); // Thêm class để khóa cuộn
+        // Sự kiện click vào nút đăng nhập
+        $("#btnlogin").click(function() {
+            $("#lop_phu_login").fadeIn();; // Hiển thị form mượt mà hơn
+            $('body').addClass('lock-scroll');
+        });
+
+        // Sự kiện click vào vùng bên ngoài form để đóng
+        $(document).click(function(event) {
+            if (event.target.id === "lop_phu_login"){
+                $("#lop_phu_login").fadeOut();
+                $('body').removeClass('lock-scroll');
+            }
+        });
     });
-
-    // Khi người dùng bấm vào lớp phủ bên ngoài để đóng
-    $("#lop_phu_login, #btnlogin").click(function(event) {
-        if (event.target.id === "lop_phu_login") { //id của #lop_phu_login
-
-            $(this).fadeOut(); // Ẩn lớp phủ và form đăng nhập
-            $('body').removeClass('lock-scroll'); // Thêm class để khóa cuộn
-        }
-    });
-
-    $(".nut_login").click(function() {
-        $("#lop_phu_login").fadeOut(); // ẩn form   
-        $('body').removeClass('lock-scroll');
-    })
-
 });

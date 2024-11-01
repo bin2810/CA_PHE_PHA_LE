@@ -31,12 +31,13 @@ body {
 
 /* Thanh cuộn đang được kéo */
 ::-webkit-scrollbar-thumb {
-    background-color: var(--dark-green); /* Màu của thanh cuộn khi được kéo */
+    background-color: rgb(0, 0, 0,0.5); /* Màu của thanh cuộn khi được kéo */
 }
   
 /* Phần nền của thanh cuộn */
 ::-webkit-scrollbar-track {
-    background-color: rgb(240, 235, 235,0.8); /* Màu của phần nền thanh cuộn */
+    background-color: white; /* Màu của phần nền thanh cuộn */
+    
 }
 
 .grid {

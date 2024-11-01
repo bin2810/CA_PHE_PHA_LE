@@ -3,7 +3,7 @@
     --dark-green: #8b9958;
     --button-color: #BE7352;
     --white-color: #ffff;
-    --black-color: #0000;
+    --black-color: #0b0b0b00;
     --tuyen-dung: #efe6d8;
     --buttonbefore-color: #c09785;
 }
@@ -22,6 +22,21 @@ html {
 
 body {
     margin: 0;
+}
+
+/* Thanh cuộn */
+::-webkit-scrollbar {
+    width: 10px; /* Độ rộng của thanh cuộn */
+}
+
+/* Thanh cuộn đang được kéo */
+::-webkit-scrollbar-thumb {
+    background-color: var(--dark-green); /* Màu của thanh cuộn khi được kéo */
+}
+  
+/* Phần nền của thanh cuộn */
+::-webkit-scrollbar-track {
+    background-color: rgb(240, 235, 235,0.8); /* Màu của phần nền thanh cuộn */
 }
 
 .grid {

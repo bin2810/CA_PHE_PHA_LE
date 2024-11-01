@@ -21,14 +21,18 @@ $(function(){
     })
 
     $("#btn_shopping").click(function(){
-        $("#lop_phu_sp").fadeOut(); // ẩn form   
-        $('body').removeClass('lock-scroll');  
-        $('#thong_bao_gio_hang').removeClass('hidden').addClass('show');
+        $.get('/html/Thong_Bao_Them_GH.html', function(data) {
+            $('body').append(data);
+            $("#lop_phu_sp").fadeOut(); // ẩn form   
+            $('body').removeClass('lock-scroll'); 
+            $('#thong_bao_gio_hang').removeClass('hidden').addClass('show');
 
-        // Tự động ẩn thông báo sau 3 giây
-        setTimeout(function() {
-            $('#thong_bao_gio_hang').removeClass('show').addClass('hidden');
-        }, 3000); // 3 giây
+            // Tự động ẩn thông báo sau 3 giây
+            setTimeout(function() {
+                $('#thong_bao_gio_hang').removeClass('show').addClass('hidden');
+            }, 3000); // 3 giây
+            
+        });
     })
 
 });

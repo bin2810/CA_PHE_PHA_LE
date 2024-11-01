@@ -237,39 +237,3 @@ input[type="radio"] {
     color: white;
    background-color: var(--dark-green);
 }
-/* thông báo */
-
-.notification {
-    position: fixed;
-    top: 10%;
-     right: -400px;/* Đặt ngoài màn hình */
-    width: 400px;
-    height: 100px;
-    padding: 10px 20px;
-    color:var(--dark-green);
-    background-color: white;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
-    border-radius: 8px;
-    display: flex;
-    align-items: center;
-    transition: right 0.5s ease-in-out;
-    z-index: 100;
-}
-.icon img{
-    width: 50px;
-    margin-right: 5px;
-}
-.notification .icon {
-    font-size: 25px;
-    margin-right: 10px;
-}
-.message{
-    font-weight: bold;
-}
-.notification.hidden {
-    right: -400px; /* Ẩn ngoài màn hình */
-} 
-
-.notification.show {
-    right: 20px; /* Hiện trên màn hình */
-}

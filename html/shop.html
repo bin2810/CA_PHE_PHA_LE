@@ -14,6 +14,7 @@
     <script src="../js_jquery/store_search.js"></script>
     <script src="../js_jquery/login.js"></script>
     <script src="../js_jquery/navbar.js"></script>
+    <script src="../js_jquery/Thong_Bao_email_footer.js"></script>
     <title>Cửa Hàng</title>
 </head>
 
@@ -426,36 +427,6 @@
                                 <div id="thong_bao" style="display: none; border: 2px solid var(--button-color);font-weight: bold; text-align: center;  padding: 15px; margin-top: 50px;">
 
                                 </div>
-
-                                <script>
-                                    $(document).ready(function() {
-                                        $('#btn_email').click(function() {
-
-                                            // Biểu thức regex kiểm tra định dạng email
-                                            var email_mau = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
-                                            var email = $('#email').val();
-
-                                            // Kiểm tra email
-                                            if (email == "") {
-                                                $('#thong_bao').text('Vui lòng nhập email').css('color', 'white').fadeIn();
-                                                setTimeout(function() {
-                                                    $('#thong_bao').fadeOut();
-                                                }, 2000);
-                                            } else if (!email_mau.test(email)) {
-                                                $('#thong_bao').text('Vui lòng nhập lại email (vui lòng đúng định dạng gmail)').css('color', 'red').fadeIn();
-                                                setTimeout(function() {
-                                                    $('#thong_bao').fadeOut();
-                                                }, 2000);
-                                            } else {
-                                                $('#thong_bao').text('Xin cảm ơn, gmail đã được gửi thành công.').css('color', 'rgb(8, 250, 8)').fadeIn(); // Hiển thị thông báo thành công
-
-                                                setTimeout(function() {
-                                                    $('#thong_bao').fadeOut();
-                                                }, 2000);
-                                            }
-                                        });
-                                    });
-                                </script>
                             </div>
                         </div>
                     </div>

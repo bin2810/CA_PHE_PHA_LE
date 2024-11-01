@@ -6,4 +6,12 @@ $(function() {
         $(".product_information_content", this).addClass("demo1").removeClass("demo2");
         $(".product_information_content", this).removeClass("move-left"); // Bỏ lớp di chuyển
     });
+
+    $(".spnb").hover(function() {
+        $(".namespnb", this).removeClass("demo3").addClass("demo4");
+        $(".namespnb", this).addClass("move-left1");
+    }, function() {
+        $(".namespnb", this).addClass("demo3").removeClass("demo4");
+        $(".namespnb", this).removeClass("move-left1");
+    });
 });

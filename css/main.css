@@ -1,3 +1,4 @@
+
 .lock-scroll {
     overflow: hidden;
     /*khóa màn hình */
@@ -13,19 +14,16 @@
     height: 72px;
     background-color: black;
     position: fixed;
-    /* Khóa navbar ở đầu */
     top: 0;
-    /* Cố định ở vị trí trên cùng của trang */
     left: 0;
     width: 100%;
-    /* Để thanh navbar chiếm hết chiều rộng màn hình */
     z-index: 1000;
-    /* Đảm bảo navbar nổi lên trên các phần tử khác */
+    transition: all 0.5s ease;
 }
 
 .box.sticky {
-    height: 94px;
-    /* Chiều dài khi cuộn xuống */
+    height: 80px;
+    transition: all 0.5s ease;
 }
 
 .logo {
@@ -222,32 +220,58 @@
 }
 
 .spnb_info {
-    margin-left: 20px;
     margin-top: 20px;
     color: var(--white-color);
 }
 
 .spnb_info .namespnb {
     height: 8px;
+    font-size: 16px;
     font-weight: bold;
+    color: var(--dark-green);
 }
 
-.spnb_info .price {
+.spnb_info .price{
     margin-top: 30px;
     font-weight: bold;
+    margin-left: 30px;
+    font-size: 14px;
+    color: var(--white-color);
+
 }
 
 .spnb .infospnb {
     text-decoration: none;
-    color: var(--white-color);
     font-weight: bold;
-    padding: 10px 25px;
+    height: 40px;
+    margin-left: 20px;
+    padding: 10px;
+    color: var(--white-color);
     transition: background-color 0.5s ease, transform 0.5s ease;
     /* Thêm transition cho transform */
 }
 
 .spnb .infospnb:hover {
     background-color: var(--button-color);
+}
+.demo3 {
+    text-align: center;
+}
+
+.move-left1 {
+    text-align: left;
+    /* Đưa tên sản phẩm sang bên trái */
+    transform: translateX(-10px);
+    /* Di chuyển sang bên trái */
+    transition: transform 0.4s ease;
+    /* Thêm hiệu ứng chuyển tiếp */
+    margin-left: 35px;
+}
+
+.demo4 {
+    color: var(--white-color)!important;
+    transition: color 0.4s ease, transform 0.4s ease;
+    /* Thêm hiệu ứng chuyển tiếp cho màu sắc */
 }
 
 

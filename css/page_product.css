@@ -154,6 +154,7 @@
 .product_col_3:hover {
     background-color: var(--dark-green);
     transform: scale(1.1);
+    transition: all 0.5s ease;
 }
 
 .tieu_de_product {
@@ -195,6 +196,8 @@
 
 .demo1 {
     text-align: center;
+    transition: all 1s ease;
+    transform: translateX(10px);
 }
 
 .move-left {
@@ -209,7 +212,7 @@
 
 .demo2 {
     color: var(--white-color);
-    transition: color 0.4s ease, transform 0.4s ease;
+    transition: color 0.4s ease, transform 0.2s ease-in-out;
     /* Thêm hiệu ứng chuyển tiếp cho màu sắc */
 }
 

@@ -37,3 +37,32 @@ $(function(){
 
 });
 
+$(function() {
+    $('#tang').click(function() {
+        var sl = parseInt($('#hiensl').val());
+
+        sl++;
+        if (sl > 1) {
+            $('.btngiam').addClass("nenbtn");
+        } else {
+            $('.btngiam').removeClass("nenbtn");
+        }
+
+        $('#hiensl').val(sl);
+    });
+
+    $('#giam').click(function() {
+        var sl = parseInt($('#hiensl').val());
+        if (sl > 1) {
+            sl--;
+            $('#hiensl').val(sl);
+        }
+        if (sl > 1) {
+            $('.btngiam').addClass("nenbtn");
+        } else {
+            $('.btngiam').removeClass("nenbtn");
+        }
+
+    });
+});
+

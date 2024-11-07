@@ -19,13 +19,13 @@ $(function() {
         if (instant) {
             $('.carousel').css('transition', 'none');
         } else {
-            $('.carousel').css('transition', 'transform 0.5s ease');
+            $('.carousel').css('transition', 'transform 0.8s ease');
         }
         $('.carousel').css('transform', 'translateX(' + (-index * 100) + '%)');
 
         // Khôi phục lại hiệu ứng chuyển động sau khi dịch chuyển tức thời
         if (instant) {
-            setTimeout(() => $('.carousel').css('transition', 'transform 0.5s ease'), 20);
+            setTimeout(() => $('.carousel').css('transition', 'transform 0.8s ease'), 20);
         }
     }
 
@@ -58,5 +58,5 @@ $(function() {
     $('.next').click(nextImage);
 
     // Tự động chuyển ảnh sau 3 giây
-    setInterval(nextImage, 3000);
+    setInterval(nextImage, 4500);
 });

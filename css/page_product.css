@@ -34,14 +34,10 @@
 
 .product_content {
     margin-left: 350px;
-    /* Chừa khoảng trống cho menu */
     padding: 20px;
     width: calc(400% - 350px);
-    /* Điều chỉnh chiều rộng của content */
 }
 
-
-/* Styling cho sản phẩm (đơn giản) */
 
 .product_content {
     margin-bottom: 0px;
@@ -60,9 +56,7 @@
 
 .list_sp a {
     display: inline-block;
-    /* Để áp dụng hiệu ứng dưới chữ */
     position: relative;
-    /* Đặt relative để định vị pseudo-element */
     color: var(--text-color);
     text-decoration: none;
     font-size: 15px;
@@ -237,6 +231,7 @@
 
 .product_information_button a:hover {
     background-color: var(--button-color);
+    transform: scale(1.6);
 }
 
 

@@ -226,9 +226,9 @@
                                 <p>ĐỊA CHỈ CÔNG TY</p>
                             </div>
                             <div class="content2">
-                                <p class="cn1">Trụ sở chính:193 Nguyễn Thị Nhỏ, Phường 9, Tân Bình, TP. Hồ Chí Minh</p>
-                                <p class="cn2">Chi nhánh Đà Nẵng: 313 Lê Thanh Nghị, Hoà Cường Nam, Hải Châu, Đà Nẵng</p>
-                                <p class="cn3">Chi nhánh Hà Nội: 15h Ngõ 133 Nguyễn Trãi, Thượng Đình, Thanh Xuân, Hà Nội</p>
+                                <p class="cn1">Trụ sở chính: <br><a href="/html/CT_Shop/TPHCM_TB.html">193 Nguyễn Thị Nhỏ, Phường 9, Tân Bình, TP. Hồ Chí Minh</a></p>
+                                <p class="cn2">Chi nhánh Đà Nẵng: <br> <a href="/html/CT_Shop/TPDN_HaiChau.html"> 313 Lê Thanh Nghị, Hoà Cường Nam, Hải Châu, Đà Nẵng</a></p>
+                                <p class="cn3">Chi nhánh Hà Nội: <br> <a href=""> 15h Ngõ 133 Nguyễn Trãi, Thượng Đình, Thanh Xuân, Hà Nội</a></p>
                                 <p class="topic_content2">EMAIL HỖ TRỢ KHÁCH HÀNG</p>
                                 <p class="email"> > &nbsp; cskh@phale.vn</p>
                                 <p class="topic_content2">HOTLINE HỖ TRỢ KHÁCH :</p>
@@ -251,35 +251,7 @@
 
                                 </div>
 
-                                <script>
-                                    $(document).ready(function() {
-                                        $('#btn_email').click(function() {
-
-                                            // Biểu thức regex kiểm tra định dạng email
-                                            var email_mau = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
-                                            var email = $('#email').val();
-
-                                            // Kiểm tra email
-                                            if (email == "") {
-                                                $('#thong_bao').text('Vui lòng nhập email').css('color', 'white').fadeIn();
-                                                setTimeout(function() {
-                                                    $('#thong_bao').fadeOut();
-                                                }, 2000);
-                                            } else if (!email_mau.test(email)) {
-                                                $('#thong_bao').text('Vui lòng nhập lại email (vui lòng đúng định dạng gmail)').css('color', 'red').fadeIn();
-                                                setTimeout(function() {
-                                                    $('#thong_bao').fadeOut();
-                                                }, 2000);
-                                            } else {
-                                                $('#thong_bao').text('Xin cảm ơn, gmail đã được gửi thành công.').css('color', 'rgb(8, 250, 8)').fadeIn(); // Hiển thị thông báo thành công
-
-                                                setTimeout(function() {
-                                                    $('#thong_bao').fadeOut();
-                                                }, 2000);
-                                            }
-                                        });
-                                    });
-                                </script>
+                                
                             </div>
                         </div>
                     </div>

@@ -7,10 +7,11 @@ $(function() {
         $("#lop_phu_login").hide();
 
         // Sự kiện click vào nút đăng nhập
-        $("#btnlogin").click(function() {
+        $("#btnlogin , #btnlogin_tablet").click(function() {
             $("#lop_phu_login").fadeIn();; // Hiển thị form mượt mà hơn
             $('body').addClass('lock-scroll');
         });
+        
 
         // Sự kiện click vào vùng bên ngoài form để đóng
         $(document).click(function(event) {

@@ -85,16 +85,9 @@
 .nd_nav_btn-bars_repon_mobile{
    display: none; 
 }
-.nd_nav_btn-bars_repon_tablet{
-    display: none; 
-}
+
 .nd_nav_btn-bars_mobile{
     display: flex;
-    align-items: center;
-}
-.nd_nav_btn-bars_tablet{
-    display: flex;
-    justify-content: space-around;
     align-items: center;
 }
 .nd_nav_btn-bars_mobile i{
@@ -102,13 +95,12 @@
     color: aliceblue;
     margin-left: 20px;
 }
-.nd_nav_btn-bars_tablet i{
-    font-size: 20px; 
-    color: aliceblue;
-    margin-left: 20px;
+.nd_nav_repon {
+   padding: 10px 20px 0 20px;
 }
-.icons_tablet{
-    margin-right: 20px;
+.nd_nav_repon a{
+    text-decoration: none;
+    color: white;
 }
 .logo_mobile{
     margin: auto;
@@ -118,7 +110,28 @@
 .logo_mobile img{
     width: 80px;
 }
-.nav_mobile{
+
+
+.nd_nav_btn-bars_repon_tablet{
+    display: none; 
+}
+.nd_nav_btn-bars_tablet{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nd_nav_btn-bars_tablet i{
+    font-size: 20px; 
+    color: aliceblue;
+    margin-left: 20px;
+}
+.icons_tablet{
+    margin-right: 20px;
+}
+
+.nav_mobile,
+.nav_tablet{
     position: fixed;
     width: 100%;
     height: 100%;
@@ -128,7 +141,8 @@
     margin-top: 70px;
     transition: all 0.5s ease;
 }
-.nav_mobile.active {
+
+.active {
     left: 0; /* Hiển thị menu */
 }
 .an_nut{
@@ -141,7 +155,7 @@
 /* responsive */
 /* 1em = 16px */
 
-@media only screen and  (max-width: 480px) {
+@media only screen and  (max-width: 739px) {
     .cangiua_nav {
         display: none;
     }
@@ -220,7 +234,7 @@
     width: 50px; 
 }
 /* mobile width < 740px */
-@media only screen and  (max-width: 480px) {
+@media only screen and  (max-width: 739px) {
     .carousel-container {
         width: 100%;
         height: auto;

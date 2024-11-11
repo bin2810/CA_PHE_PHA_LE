@@ -57,3 +57,11 @@ body {
     max-width: 100%;
     margin: 0 auto;
 }
+
+
+/* tablet width >= 740 and width <1024px */
+@media only screen and (min-width: 46.25em ) and (max-width: 63.9375em){
+    
+}
+
+/* pc width > 1024px */

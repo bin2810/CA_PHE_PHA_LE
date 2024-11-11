@@ -26,6 +26,60 @@
         <div class="header">
             <div class="box">
                 <div class="grid">
+                    <div class="nd_nav_btn-bars_repon">
+                            <div class="nd_nav_btn-bars">
+                                <i class="fa-solid fa-bars" id="bars_navbar"></i>
+                                <i class="fa-solid fa-xmark an_nut" id="exit_navbar"></i>
+                                <script>
+                                    $(document).ready(function() {
+                                        $("#bars_navbar").click(function() {
+                                            $(".nav_mobile").addClass('active');
+                                            $(this).hide();
+                                            $("#exit_navbar").show();
+                                        });
+
+                                        $("#exit_navbar").click(function() {
+                                            $(".nav_mobile").removeClass('active');
+                                            $("#exit_navbar").hide();
+                                            $("#bars_navbar").show();
+                                        });
+                                    });
+                                </script>
+                            <div class="logo_mobile">
+                                <a href="/index.html">
+                                    <img src="/image/trang_chủ/logo_trang.png" class="logo_nav" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="nav_mobile">
+                            <div class="nd_nav_mobile">
+                                <a href="/html/CT_Page/Page_Product.html">
+                                    <p>SẢN PHẨM</p>
+                                </a>
+                                <a href="/html/CT_News/tintuc.html">
+                                    <p>TIN TỨC </p>
+                                </a>
+                                <a href="/html/CT_Shop/shop.html">
+                                    <p>CỬA HÀNG</p>
+                                </a>
+                                <a href="/html/CT_Office/tuyendung.html">
+                                    <p>TUYỂN DỤNG</p>
+                                </a>
+                                <a href="/html/Thanh_vien.html">
+                                    <p>THẺ THÀNH VIÊN</p>
+                                </a>
+                                <a href="/html/Lien_He.html">
+                                    <p>LIÊN HỆ</p>
+                                </a>
+                                <a href="/html/.html">
+                                    <p id="btnlogin">ĐĂNG NHẬP</p>
+                                </a>
+                                <a href="/html/.html">
+                                    <p>GIỎ HÀNG</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                     <div class="cangiua_nav">
                         <div class="logo">
                             <a href="/index.html">
@@ -62,7 +116,9 @@
                             </button>
                         </div>
                     </div>
+                    
                 </div>
+                
             </div>
 
             <div class="carousel-container">
@@ -296,7 +352,7 @@
             </div>
             <!-- HỆ THỐNG CỬA HÀNG -->
             <div class="grid">
-                <div class="address">
+                <div class="address_index">
                     <div class="text_of_topic">
                         <h1>
                             HỆ THỐNG CỬA HÀNG

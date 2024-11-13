@@ -1,4 +1,3 @@
-
 .lock-scroll {
     overflow: hidden;/*khóa màn hình */
 }
@@ -54,7 +53,6 @@
     color: white;
     font-weight: bold;
     font-size: 16px;
-    font-family: Arial, Helvetica, sans-serif;
 }
 
 .nd_nav img {
@@ -152,27 +150,6 @@
     display: block;
 }
 
-/* responsive */
-/* 1em = 16px */
-
-@media only screen and  (max-width: 739px) {
-    .cangiua_nav {
-        display: none;
-    }
-  
-    .nd_nav_btn-bars_repon_mobile {
-      display: block;
-    }
-}
-/* tablet width >= 740 and width <1024px */
-@media only screen and (min-width: 740px ) and (max-width: 1200px){
-    .cangiua_nav {
-        display: none;
-    }
-    .nd_nav_btn-bars_repon_tablet {
-        display: block;
-      }
-}
 
 /* carousel */
 .carousel-container {
@@ -233,46 +210,13 @@
 .btn-carousel img {
     width: 50px; 
 }
-/* mobile width < 740px */
-@media only screen and  (max-width: 739px) {
-    .carousel-container {
-        width: 100%;
-        height: auto;
-       
-    }
-    .carousel img {
-        width: 100%;
-        height: auto;
-        flex: 0 0 100%;
-        flex-shrink: 0;
-    }
-    
-}
-/* tablet width >= 740 and width <1024px */
-@media only screen and (min-width: 740px ) and (max-width: 1400px){
-    .carousel-container {
-        width: 100%;
-        height: auto;
-       
-    }
-    .carousel img {
-        width: 100%;
-        height: auto;
-        flex: 0 0 100%;
-        flex-shrink: 0;
-    }
-}
+
 /*hết*/
 
 
 /* NHỮNG ĐIỀU KHÁC BIỆT */
 
-.text_of_topic {
-    /* font-size: 32px; */
-    margin: 0;
-    font-weight: bold;
-    font-family: Arial, Helvetica, sans-serif;
-}
+
 
 .text_of_topic h1 {
     text-align: center;
@@ -297,7 +241,6 @@
 
 .row .nd1 .topic1 {
     font-weight: 700;
-    font-family: Arial, Helvetica, sans-serif;
     font-size: 22px;
     text-align: center;
 
@@ -305,14 +248,12 @@
 
 .row .nd2 .topic2 {
     font-weight: 700;
-    font-family: Arial, Helvetica, sans-serif;
     font-size: 22px;
     text-align: center;
 }
 
 .ndchinh1,
 .ndchinh2{
-    font-family: Arial, Helvetica, sans-serif;
     font-size: 17px;
     text-align: justify;
 }
@@ -320,7 +261,9 @@
 
 
 /* SẢN PHẨM NỔI BẬT */
-
+.spnb_main_mobile{
+    display: none;
+}
 .row_spnb {
     margin: 70px 0px;
     display: flex;
@@ -334,6 +277,7 @@
     background-color: var(--white-color);
     transition: background-color 0.6s ease, transform 0.6s ease;
 }
+
 
 .spnb:hover {
     background-color: var(--dark-green);
@@ -362,6 +306,7 @@
     margin-top: 20px;
     color: var(--white-color);
 }
+
 
 .spnb_info .namespnb {
     height: 8px;
@@ -417,28 +362,29 @@
 /*phần paste*/
 
 .spnb_new {
-    margin-top: 30px;
-    background-image: url(../image/trang_chủ/sản\ phẩm_Trà\ xanh\ TB.png);
-    background-repeat: no-repeat;
+    position: relative;
     width: 100%;
-    height: 100%;
+    height: auto;
 }
 
 .spnbnew_main {
-    height: 750px;
+    position: absolute;
+    top: 0;
+    right: 110px;
 }
 
-.logospnbnew {
-    margin-left: 750px;
+.logospnbnew,
+.trynow {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .text_of_spnbnew {
     width: 700px;
-    font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
     text-align: justify;
     font-weight: normal;
-    margin-left: 650px;
 }
 
 .trynow a {
@@ -450,7 +396,6 @@
     height: 50px;
     background-color: #85b349;
     border-radius: 30px;
-    margin-left: 700px;
     margin-top: 40px;
     text-decoration: none;
     color: black;
@@ -466,14 +411,14 @@
 .ttnb_layout {
     padding: 40px;
     margin: auto;
-    width: 1280px;
+    width: 100%;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
-    height: 800px;
+    height: auto;
 }
 
 .ttnb_img {
-    width: 1200px;
-    height: 462px;
+    width: 100%;
+    height: auto;
     overflow: hidden;
 }
 
@@ -493,27 +438,23 @@
     margin-top: 40px;
 }
 
-.ttnb_pl {
-    padding: 5px 20px;
-    background-color: #80ACBF;
-}
-
+.ttnb_pl,
 .ttnb_tt {
     padding: 5px 20px;
     background-color: #80ACBF;
+}
+.ttnb_tt {
     margin: 0 20px;
 }
 
 .ttnb_nut a {
     text-decoration: none;
     color: white;
-    font-family: Arial, Helvetica, sans-serif;
 }
 
 .ttnb_layout .ttnb_topic p {
     font-weight: bold;
     font-size: 20px;
-    font-family: Arial, Helvetica, sans-serif;
 }
 
 .ttnb_layout .ttnb_content p {
@@ -524,7 +465,6 @@
 .ttnb_layout .ttnb_more a {
     text-decoration: none;
     color: white;
-    font-family: Arial, Helvetica, sans-serif;
     padding: 10px 15px;
     background-color: #BC997C;
     color: white;
@@ -583,14 +523,12 @@
     padding: 6px 20px;
     background-color: #80ACBF;
     text-decoration: none;
-    font-family: Arial, Helvetica, sans-serif;
     color: white;
     font-size: 12px;
 }
 
 .namettspnb {
     font-weight: bold;
-    font-family: Arial, Helvetica, sans-serif;
     font-size: 18px;
     color: black;
     line-height: 20px;
@@ -599,7 +537,6 @@
 .content_of_spttnb {
     font-weight: bold;
     font-size: 12px;
-    font-family: Arial, Helvetica, sans-serif;
     color: #3F3F3F;
     width: 350px;
     line-height: 18px;
@@ -609,7 +546,6 @@
     padding: 7px 25px;
     background-color: #BC997C;
     text-decoration: none;
-    font-family: Arial, Helvetica, sans-serif;
     color: white;
     font-size: 12px;
 }
@@ -662,7 +598,6 @@
 
 .topic_address {
     font-weight: bold;
-    font-family: Arial, Helvetica, sans-serif;
     font-size: 22px;
     text-align: center;
 }
@@ -671,8 +606,7 @@
     font-size: 14px;
     text-align: justify;
     font-weight: bold;
-    font-family: Arial, Helvetica, sans-serif;
-    color: #747474;
+    color: var(--text-color);
 }
 
 .another_address {
@@ -696,7 +630,9 @@
 .imganother img:hover {
     transform: scale(1.1);
 }
-
+.xemthem_address_mobile{
+    display: none;
+}
 
 /* FOOTER */
 
@@ -722,13 +658,11 @@
 
 .footer_content1 .topic_content1 p {
     font-size: 15px;
-    font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
 }
 
 .footer_content1 .content1 a {
     text-decoration: none;
-    font-family: Arial, Helvetica, sans-serif;
     font-size: 14px;
 }
 
@@ -738,13 +672,11 @@
 
 .footer_content2 .topic_content2 {
     font-size: 15px;
-    font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
 }
 
 .footer_content2 .content2 {
     width: 350px;
-    font-family: Arial, Helvetica, sans-serif;
     font-size: 14px;
     
 }
@@ -768,13 +700,11 @@
 
 .footer_content3 .topic_content3 p {
     font-size: 15px;
-    font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
 }
 
 .footer_content3 .content3 {
     text-decoration: none;
-    font-family: Arial, Helvetica, sans-serif;
     font-size: 14px;
 }
 
@@ -831,7 +761,6 @@
     font-weight: normal;
     text-align: center;
     color: white;
-    font-family: Arial, Helvetica, sans-serif;
     padding: 0;
     margin: 0;
 }
@@ -839,5 +768,495 @@
 
 /* hết */
 
+
+
+
+/* responsive */
+/* 1em = 16px */
+
+@media only screen and  (max-width: 1024px){
+    .carousel-container {
+        width: 100%;
+        height: auto;
+    }
+    .carousel img {
+        width: 100%;
+        height: auto;
+        flex: 0 0 100%;
+        flex-shrink: 0;
+    }
+}
+
+/* tablet width >= 740 and width <1024px */
+@media only screen and (min-width: 740px ) and (max-width: 1200px){
+    .cangiua_nav {
+        display: none;
+    }
+    .nd_nav_btn-bars_repon_tablet {
+        display: block;
+    }
+    
+}
+/* mobile width < 740px */
+@media only screen and  (max-width: 739px) {
+    .cangiua_nav {
+        display: none;
+    }
+  
+    .nd_nav_btn-bars_repon_mobile {
+      display: block;
+    }
+
+    /* pha lê những điều khác biệt */
+    .nd_diff .row {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .row .imgmain {
+        padding: 0;
+    }
+    .row .imgmain {
+        order: -1;
+        margin: auto ;
+        width: 100%;
+    }
+    .text_of_topic h1 {
+        text-align: center;
+        padding: 15px;
+        font-size: 19px;
+        font-weight: 700;
+    }
+    
+    .imgofdiff {
+        width: 100%;
+        height: auto;
+    }
+    .imgofdiff img {
+        width: 100%;
+        height: auto;
+    }
+    .row .nd1 .topic1,
+    .row .nd2 .topic2  {
+        font-weight: 400;
+        font-size: 18px;
+        text-align: left;
+    }
+    .ndchinh1,
+    .ndchinh2{
+        font-size: 15px;
+        text-align: justify;
+        color: var(--text-color);
+        line-height: 25px;
+    }
+    /* hết */
+    .spnb_main{
+        display: none;
+    }
+    .spnb_main_mobile{
+        display: block;
+        padding: 20px;
+    }
+    .row_spnb_mobile {
+        width: 100%;
+        margin: 20px 0;
+        
+    }
+    .spnb_mobile{
+        width: 100%;
+        height: auto;
+        margin: 30px auto;
+        box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.2);
+        padding:  25px 0;
+    }
+    .spnbimg_mobile img {
+        width: 100%;
+        height: auto;
+    }
+    .namespnb_mobile{
+        padding: 0 10px;
+        color: var(--dark-green);
+        font-weight: 600;
+        font-size: 17px;
+    }
+    .price_mobile{
+        padding: 0 10px;
+        color: var(--button-color);
+        font-weight: bold;
+        font-size: 16px;
+    }
+    .infospnb_mobile{
+        margin: 50px 10px;
+        padding: 10px 15px;
+        color: var(--white-color);
+        font-weight: bold;
+        font-size: 16px;
+        text-decoration: none;
+        background-color: var(--button-color);
+        opacity: 60%;
+        transition: all 0.5s ease;
+    }
+    .infospnb_mobile:hover{
+        opacity: 100%;
+    }
+    /* kjsrngrnkmkr */
+
+
+    .news{
+        padding: 20px;
+    }
+    .ttnb_layout {
+        padding: 20px;
+        width: 100%;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+        height: auto;
+    }
+
+    .ttnb_img {
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+    }
+
+    .ttnb_img img {
+        width: 100%;
+        transition: transform 0.5s ease;
+    }
+
+    .ttnb_img img:hover {
+        transform: scale(1.1);
+        /* Tăng kích thước lên 20% khi hover */
+    }
+
+    .ttnb_nut {
+        display: flex;
+        margin-top: 20px;
+    }
+
+    .ttnb_pl,
+    .ttnb_tt {
+        padding: 2px 18px;
+        background-color: #80ACBF;
+    }
+    .ttnb_tt {
+        margin: 0 20px;
+    }
+
+    .ttnb_nut a {
+        text-decoration: none;
+        color: white;
+    }
+
+    .ttnb_layout .ttnb_topic p {
+        font-weight: bold;
+        font-size: 16px;
+    }
+
+    .ttnb_layout .ttnb_content p {
+        color: #696969;
+        font-size: 12px;
+    }
+
+    .ttnb_layout .ttnb_more a {
+        text-decoration: none;
+        color: white;
+        padding: 8px 12px;
+        background-color: #BC997C;
+        color: white;
+    }
+
+
+    /* SẢN PHẨM TIN TỨC NỔI BẬT */
+
+    .row_ttspnb {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: space-evenly;
+        margin-top: 50px;
+    }
+
+    .row_ttspnb .ttspnb {
+        width: 100%;
+        height: auto;
+        padding: 20px;
+        box-shadow: 4px 4px 10px rgb(158, 157, 157,0.5);
+        margin: 20px 0;
+    }
+
+    .row_ttspnb .ttspnb a img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 5px;
+        transition: transform 0.5s ease;
+    }
+
+    .row_ttspnb .ttspnb a img:hover {
+        transform: scale(1.2);
+    }
+
+    .row_ttspnb .ttspnb img {
+        width: 100%;
+        height: auto;
+    }
+
+    .row_ttspnb .ttspnb .ttspnbimg {
+        width: 100%;
+        height: auto;
+        overflow: hidden;   
+    }
+    .ttspnb a {
+        text-decoration: none;
+    }
+
+    .nut_tt {
+        margin-top: 20px;
+    }
+
+    .nut_tt a {
+        padding: 6px 20px;
+        background-color: #80ACBF;
+        text-decoration: none;
+        color: white;
+        font-size: 12px;
+    }
+
+    .namettspnb {
+        font-weight: bold;
+        font-size: 18px;
+        color: black;
+        line-height: 20px;
+    }
+
+    .content_of_spttnb {
+        font-weight: bold;
+        font-size: 12px;
+        color: #3F3F3F;
+        width: 350px;
+        line-height: 18px;
+    }
+
+    .infottspnb {
+        padding: 7px 25px;
+        background-color: #BC997C;
+        text-decoration: none;
+        color: white;
+        font-size: 12px;
+    }
+
+
+    
+/* CHI NHÁNH CỬA HÀNG */
+.address_index{
+    margin-top: 50px;
+    padding: 20px;
+}
+.layout_address {
+
+    display: grid;
+    width: 100%;
+    height: auto;
+    grid-template-columns: 1fr;
+    padding: 20px;
+    margin: auto;
+    align-items: center;
+    box-shadow: 4px 4px 10px rgb(135, 133, 133 , 0.5);
+}
+
+.layout_address .img_address {
+    margin: 0 auto;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.layout_address .img_address img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.layout_address .img_address::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -150%;
+    width: 30%;
+    /* Giảm chiều rộng của bóng trắng */
+    height: 100%;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.5) 50%, rgba(255, 255, 255, 0) 100%);
+    transform: skewX(-25deg);
+    transition: 1s;
+}
+
+.layout_address .img_address:hover::before {
+    left: 150%;
+    transition: 1s;
+}
+
+.topic_address {
+    font-weight: 600;
+    font-size: 14px;
+    text-align: left;
+}
+
+.address_content .content {
+    font-size: 12px;
+    text-align: justify;
+    font-weight: bold;
+    color: var(--text-color);
+}
+
+.another_address {
+    display: none;
+}
+.xemthem_address_mobile{
+    display: block;
+    width: 100%;
+    margin: 20px 0 0 0 ;
+}
+.xemthem_address_mobile p{
+    text-align: center;
+}
+.xemthem_address_mobile a{
+    background-color: var(--button-color);
+    padding: 10px;
+    text-decoration: none;
+    color: var(--white-color);
+}
+
+
+/* FOOTER */
+
+.footer_layout {
+    background-color: black;
+    padding: 20px 5px 10px 5px;
+}
+
+.footer_row {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 10px;
+}
+
+.footer_row p {
+    color: white;
+}
+
+.footer_content1 {
+    margin: 0;
+    line-height: 20px;
+}
+
+.footer_content1 .topic_content1 p {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.footer_content1 .content1 a {
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.footer_content2 {
+    line-height: 20px;
+}
+
+.footer_content2 .topic_content2 {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.footer_content2 .content2 {
+    width: 350px;
+    font-size: 14px;
+    
+}
+.content2 a{
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+    font-weight: normal;
+}
+.cn1,
+.cn2,
+.cn3{
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.footer_content3 {
+    margin: 0;
+    line-height: 20px;
+}
+
+.footer_content3 .topic_content3 p {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.footer_content3 .content3 {
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.content3 .thanhsearch {
+    position: relative;
+    
+    width: 100%;
+    /* Cùng kích thước với input */
+    border: 1px solid white;
+    border-radius: 26px;
+}
+
+.footer_content3 .content3 .thanhsearch .searchemail {
+    height: 50px;
+    width: 100%;
+    /* Đảm bảo kích thước của email input chiếm toàn bộ container */
+    border-radius: 26px;
+    border: 2px solid black;
+    padding-right: 90px;
+    /* Để tạo khoảng trống cho nút gửi */
+    border: 1px solid white;
+}
+
+.footer_content3 .content3 .thanhsearch .nutgui {
+    position: absolute;
+    right: 0;
+    /* Căn về phía phải của container */
+    top: 0;
+    /* Căn trên cùng */
+    height: 50px;
+    width: 80px;
+    border-radius: 0px 26px 26px 0px;
+    background-color: black;
+    color: var(--white-color);
+}
+
+.footer_content3 .content3 input::placeholder {
+    color: rgba(0, 0, 0, 0.5);
+    /* Màu đen với độ trong suốt 50% */
+    font-style: italic;
+    /* Đặt kiểu chữ in nghiêng (tuỳ chọn) */
+}
+
+.footer_content3 .content3 input:hover {
+    background-color: white;
+}
+
+.footer_layout hr {
+    margin-top: 30px;
+}
+
+.nsxPL p {
+    font-size: 15px;
+    font-weight: normal;
+    text-align: center;
+    color: white;
+    padding: 0;
+    margin: 0;
+}
+
+
+}
 
 

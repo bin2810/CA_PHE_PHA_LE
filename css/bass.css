@@ -60,8 +60,23 @@ body {
 
 
 /* tablet width >= 740 and width <1024px */
-@media only screen and (min-width: 46.25em ) and (max-width: 63.9375em){
+@media only screen and  (max-width: 1024px){
+    .grid {
+        width: 100%;
+        max-width: 100%;
+        margin: 0 auto;
+    }
     
+    .grid_thanhvien {
+        width: 100%;
+        max-width: 100%;
+        margin: 0 auto;
+    }
+    
+    .grid_check-out{
+        width: 100%;
+        max-width: 100%;
+        margin: 0 auto;
+    }
 }
 
-/* pc width > 1024px */

@@ -902,6 +902,8 @@
 
 
     .news{
+        width: 100%;
+        height: auto;
         padding: 20px;
     }
     .ttnb_layout {
@@ -970,22 +972,23 @@
     .row_ttspnb {
         display: grid;
         grid-template-columns: 1fr;
-        justify-content: space-evenly;
         margin-top: 50px;
+        /* padding: 20px; */
     }
-
+    .ttspnbimg  {
+        padding: 0;
+    }
     .row_ttspnb .ttspnb {
         width: 100%;
         height: auto;
-        padding: 20px;
+        padding: 20px 0;
         box-shadow: 4px 4px 10px rgb(158, 157, 157,0.5);
         margin: 20px 0;
     }
 
     .row_ttspnb .ttspnb a img {
         display: block;
-        margin-left: auto;
-        margin-right: auto;
+        padding: 5px;
         border-radius: 5px;
         transition: transform 0.5s ease;
     }

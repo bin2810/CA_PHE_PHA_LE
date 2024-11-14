@@ -1,10 +1,10 @@
 .banner_thanh_vien{
     width: 100%;
-    height: 450px;
+    height: auto;
     overflow: hidden;
 }
 .clause{
-    margin: 50px 0 ;
+    margin: 10px 0 ;
 }
 .header_member p{
     padding: 5px;
@@ -19,4 +19,61 @@
     padding: 10px 10px 10px 60px;
     font-size: 25px;
     font-weight: bold;
+}
+@media only screen and (min-width: 740px ) and (max-width: 1200px){
+    .banner_thanh_vien{
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+    }
+    .clause{
+        margin: 10px 0 ;
+        padding: 20px;
+    }
+    .header_member p{
+        padding: 5px;
+    }
+    
+    .bai_viet{
+        margin: 50px 0;
+    }
+    
+    .bai_viet header{
+        margin: 40px 0;
+        padding: 10px 10px 10px 60px;
+        font-size: 25px;
+        font-weight: bold;
+    }
+}
+
+@media only screen and (max-width: 739px){
+    .banner_thanh_vien{
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+    }
+    .clause{
+        margin: 10px 0 ;
+        padding: 20px;
+    }
+    .header_member h2{
+        font-size: 18px;
+        font-weight: 700;
+        padding: 5px;
+    }
+    .header_member p{
+        font-size: 16px;
+        padding: 5px;
+    }
+    
+    .bai_viet{
+        margin: 50px 0;
+    }
+    
+    .bai_viet header{
+        margin: 40px 0;
+        padding: 10px 10px 10px 60px;
+        font-size: 25px;
+        font-weight: bold;
+    }
 }

@@ -85,10 +85,13 @@
 }
 
 .nd_nav_btn-bars_mobile{
-    display: flex;
-    align-items: center;
+   position: relative;
 }
 .nd_nav_btn-bars_mobile i{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
     font-size: 20px; 
     color: aliceblue;
     margin-left: 20px;
@@ -114,18 +117,24 @@
     display: none; 
 }
 .nd_nav_btn-bars_tablet{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    position: relative;
+    
 }
 
 .nd_nav_btn-bars_tablet i{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
     font-size: 20px; 
     color: aliceblue;
     margin-left: 20px;
 }
 .icons_tablet{
-    margin-right: 20px;
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
 }
 
 .nav_mobile,
@@ -774,7 +783,7 @@
 /* responsive */
 /* 1em = 16px */
 
-@media only screen and  (max-width: 1024px){
+@media only screen and  (max-width: 1200px){
     .carousel-container {
         width: 100%;
         height: auto;
@@ -849,6 +858,8 @@
         line-height: 25px;
     }
     /* hết */
+
+
     .spnb_main{
         display: none;
     }
@@ -898,7 +909,7 @@
     .infospnb_mobile:hover{
         opacity: 100%;
     }
-    /* kjsrngrnkmkr */
+
 
 
     .news{
@@ -998,7 +1009,7 @@
     }
 
     .row_ttspnb .ttspnb img {
-        width: 100%;
+        /* width: 100%; */
         height: auto;
     }
 
@@ -1034,7 +1045,8 @@
         font-weight: bold;
         font-size: 12px;
         color: #3F3F3F;
-        width: 350px;
+        width: 100%;
+        height: auto;
         line-height: 18px;
     }
 
@@ -1047,219 +1059,231 @@
     }
 
 
-    
-/* CHI NHÁNH CỬA HÀNG */
-.address_index{
-    margin-top: 50px;
-    padding: 20px;
-}
-.layout_address {
+        
+    /* CHI NHÁNH CỬA HÀNG */
+    .address_index{
+        margin-top: 50px;
+        padding: 20px;
+    }
+    .layout_address {
 
-    display: grid;
-    width: 100%;
-    height: auto;
-    grid-template-columns: 1fr;
-    padding: 20px;
-    margin: auto;
-    align-items: center;
-    box-shadow: 4px 4px 10px rgb(135, 133, 133 , 0.5);
-}
+        display: grid;
+        width: 100%;
+        height: auto;
+        grid-template-columns: 1fr;
+        padding: 20px;
+        margin: auto;
+        align-items: center;
+        box-shadow: 4px 4px 10px rgb(135, 133, 133 , 0.5);
+    }
 
-.layout_address .img_address {
-    margin: 0 auto;
-    width: 100%;
-    position: relative;
-    overflow: hidden;
-}
+    .layout_address .img_address {
+        margin: 0 auto;
+        width: 100%;
+        position: relative;
+        overflow: hidden;
+    }
 
-.layout_address .img_address img {
-    width: 100%;
-    height: auto;
-    display: block;
-}
+    .layout_address .img_address img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
 
-.layout_address .img_address::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: -150%;
-    width: 30%;
-    /* Giảm chiều rộng của bóng trắng */
-    height: 100%;
-    background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.5) 50%, rgba(255, 255, 255, 0) 100%);
-    transform: skewX(-25deg);
-    transition: 1s;
-}
+    .layout_address .img_address::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -150%;
+        width: 30%;
+        /* Giảm chiều rộng của bóng trắng */
+        height: 100%;
+        background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.5) 50%, rgba(255, 255, 255, 0) 100%);
+        transform: skewX(-25deg);
+        transition: 1s;
+    }
 
-.layout_address .img_address:hover::before {
-    left: 150%;
-    transition: 1s;
-}
+    .layout_address .img_address:hover::before {
+        left: 150%;
+        transition: 1s;
+    }
 
-.topic_address {
-    font-weight: 600;
-    font-size: 14px;
-    text-align: left;
-}
+    .topic_address {
+        font-weight: 600;
+        font-size: 14px;
+        text-align: left;
+    }
 
-.address_content .content {
-    font-size: 12px;
-    text-align: justify;
-    font-weight: bold;
-    color: var(--text-color);
-}
+    .address_content .content {
+        font-size: 12px;
+        text-align: justify;
+        font-weight: bold;
+        color: var(--text-color);
+    }
 
-.another_address {
-    display: none;
-}
-.xemthem_address_mobile{
-    display: block;
-    width: 100%;
-    margin: 20px 0 0 0 ;
-}
-.xemthem_address_mobile p{
-    text-align: center;
-}
-.xemthem_address_mobile a{
-    background-color: var(--button-color);
-    padding: 10px;
-    text-decoration: none;
-    color: var(--white-color);
-}
-
-
-/* FOOTER */
-
-.footer_layout {
-    background-color: black;
-    padding: 20px 5px 10px 5px;
-}
-
-.footer_row {
-    display: grid;
-    grid-template-columns: 1fr;
-    padding: 10px;
-}
-
-.footer_row p {
-    color: white;
-}
-
-.footer_content1 {
-    margin: 0;
-    line-height: 20px;
-}
-
-.footer_content1 .topic_content1 p {
-    font-size: 15px;
-    font-weight: bold;
-}
-
-.footer_content1 .content1 a {
-    text-decoration: none;
-    font-size: 14px;
-}
-
-.footer_content2 {
-    line-height: 20px;
-}
-
-.footer_content2 .topic_content2 {
-    font-size: 15px;
-    font-weight: bold;
-}
-
-.footer_content2 .content2 {
-    width: 350px;
-    font-size: 14px;
-    
-}
-.content2 a{
-    text-decoration: none;
-    color: white;
-    font-size: 12px;
-    font-weight: normal;
-}
-.cn1,
-.cn2,
-.cn3{
-    font-size: 15px;
-    font-weight: bold;
-}
-
-.footer_content3 {
-    margin: 0;
-    line-height: 20px;
-}
-
-.footer_content3 .topic_content3 p {
-    font-size: 15px;
-    font-weight: bold;
-}
-
-.footer_content3 .content3 {
-    text-decoration: none;
-    font-size: 14px;
-}
-
-.content3 .thanhsearch {
-    position: relative;
-    
-    width: 100%;
-    /* Cùng kích thước với input */
-    border: 1px solid white;
-    border-radius: 26px;
-}
-
-.footer_content3 .content3 .thanhsearch .searchemail {
-    height: 50px;
-    width: 100%;
-    /* Đảm bảo kích thước của email input chiếm toàn bộ container */
-    border-radius: 26px;
-    border: 2px solid black;
-    padding-right: 90px;
-    /* Để tạo khoảng trống cho nút gửi */
-    border: 1px solid white;
-}
-
-.footer_content3 .content3 .thanhsearch .nutgui {
-    position: absolute;
-    right: 0;
-    /* Căn về phía phải của container */
-    top: 0;
-    /* Căn trên cùng */
-    height: 50px;
-    width: 80px;
-    border-radius: 0px 26px 26px 0px;
-    background-color: black;
-    color: var(--white-color);
-}
-
-.footer_content3 .content3 input::placeholder {
-    color: rgba(0, 0, 0, 0.5);
-    /* Màu đen với độ trong suốt 50% */
-    font-style: italic;
-    /* Đặt kiểu chữ in nghiêng (tuỳ chọn) */
-}
-
-.footer_content3 .content3 input:hover {
-    background-color: white;
-}
-
-.footer_layout hr {
-    margin-top: 30px;
-}
-
-.nsxPL p {
-    font-size: 15px;
-    font-weight: normal;
-    text-align: center;
-    color: white;
-    padding: 0;
-    margin: 0;
-}
+    .another_address {
+        display: none;
+    }
+    .xemthem_address_mobile{
+        display: block;
+        width: 100%;
+        margin: 20px 0 0 0 ;
+    }
+    .xemthem_address_mobile p{
+        text-align: center;
+    }
+    .xemthem_address_mobile a{
+        background-color: var(--button-color);
+        padding: 10px;
+        text-decoration: none;
+        color: var(--white-color);
+    }
 
 
+    /* FOOTER */
+
+    .footer_layout {
+        background-color: black;
+        padding: 20px 5px 10px 5px;
+        width: 100%;
+    }
+    .logo_col img{
+        width: 150px;
+    }
+
+    .footer_row {
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 10px;
+    }
+
+    .footer_row p {
+        color: white;
+    }
+
+    .footer_content1 {
+        margin: 0;
+        line-height: 20px;
+    }
+
+    .footer_content1 .topic_content1 p {
+        font-size: 15px;
+        font-weight: bold;
+    }
+
+    .footer_content1 .content1 a {
+        text-decoration: none;
+        font-size: 14px;
+    }
+
+    .footer_content2 {
+        line-height: 20px;
+    }
+
+    .footer_content2 .topic_content2 {
+        font-size: 15px;
+        font-weight: bold;
+    }
+
+    .footer_content2 .content2 {
+        width: 100%;
+        font-size: 14px;
+        
+    }
+    .content2 a{
+        text-decoration: none;
+        color: white;
+        font-size: 12px;
+        font-weight: normal;
+    }
+    .cn1,
+    .cn2,
+    .cn3{
+        font-size: 15px;
+        font-weight: bold;
+    }
+
+    .footer_content3 {
+        margin: 0;
+        line-height: 20px;
+    }
+
+    .footer_content3 .topic_content3 p {
+        font-size: 15px;
+        font-weight: bold;
+    }
+
+    .footer_content3 .content3 {
+        text-decoration: none;
+        font-size: 14px;
+    }
+
+    .content3 .thanhsearch {
+        position: relative;
+        width: 100%;
+        /* Cùng kích thước với input */
+        border: 1px solid white;
+        border-radius: 26px;
+    }
+
+    .footer_content3 .content3 l {
+        height: auto;
+        width: 100%;
+        /* Đảm bảo kích thước của email input chiếm toàn bộ container */
+        border-radius: 26px;
+        border: 2px solid black;
+        padding-right: 90px;
+        /* Để tạo khoảng trống cho nút gửi */
+        border: 1px solid white;
+        
+    }
+
+    .thanhsearch  {
+        position: relative;
+        height:auto;
+        width: 100%;
+        border-radius: 0px 26px 26px 0px;
+        background-color: black;
+        color: var(--white-color);
+    }
+    .nutgui{
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 300px;
+        border-radius: 0px 26px 26px 0px;
+        background-color: black;
+        color: var(--white-color);
+    }
+
+    .footer_content3 .content3 input::placeholder {
+        color: rgba(0, 0, 0, 0.5);
+        /* Màu đen với độ trong suốt 50% */
+        font-style: italic;
+        /* Đặt kiểu chữ in nghiêng (tuỳ chọn) */
+        width: 100%;
+    }
+
+    .footer_content3 .content3 input:hover {
+        background-color: white;
+    }
+
+    .footer_layout hr {
+        margin-top: 30px;
+    }
+
+    .nsxPL p {
+        font-size: 12px;
+        font-weight: normal;
+        text-align: center;
+        color: white;
+        padding: 0;
+        margin: 0;
+    }
+
+
 }
+
+
 
 

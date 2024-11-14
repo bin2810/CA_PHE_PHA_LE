@@ -22,7 +22,7 @@ $(document).ready(function() {
 
             setTimeout(function() {
                 $('#thong_bao').fadeOut();
-            }, 2000);
+            }, 4000);
         }
     });
 });

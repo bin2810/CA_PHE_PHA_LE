@@ -797,17 +797,53 @@
 }
 
 /* tablet width >= 740 and width <1024px */
-@media only screen and (min-width: 740px ) and (max-width: 1200px){
+@media only screen and (min-width: 735px ) and (max-width: 1200px){
     .cangiua_nav {
         display: none;
     }
     .nd_nav_btn-bars_repon_tablet {
         display: block;
     }
+     /* pha lê những điều khác biệt */
+     .nd_diff .row {
+        display: grid;
+        grid-template-rows: auto auto auto;
+    }
+    
+    .text_of_topic h1 {
+        text-align: center;
+        padding: 15px;
+        font-size: 19px;
+        font-weight: 700;
+    }
+    
+    .imgofdiff {
+        width: 100%;
+        height: auto;
+    }
+    .imgofdiff img {
+        width: 100%;
+        height: auto;
+    }
+    .row .nd1 .topic1,
+    .row .nd2 .topic2  {
+        font-weight: 400;
+        font-size: 18px;
+        text-align: left;
+    }
+    .ndchinh1,
+    .ndchinh2{
+        font-size: 15px;
+        text-align: justify;
+        color: var(--text-color);
+        line-height: 25px;
+    }
+    /* hết */
+
     
 }
 /* mobile width < 740px */
-@media only screen and  (max-width: 739px) {
+@media only screen and  (max-width: 734px) {
     .cangiua_nav {
         display: none;
     }

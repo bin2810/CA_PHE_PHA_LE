@@ -147,6 +147,7 @@
     background-color: black;
     margin-top: 70px;
     transition: all 0.5s ease;
+    z-index: 200;
 }
 
 .active {
@@ -1316,7 +1317,6 @@
         padding: 0;
         margin: 0;
     }
-
 
 }
 

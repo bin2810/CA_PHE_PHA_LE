@@ -106,7 +106,6 @@
 .logo_mobile{
     margin: auto;
     text-align: center;
-
 }
 .logo_mobile img{
     width: 80px;
@@ -648,7 +647,9 @@
 
 .footer_layout {
     background-color: black;
-    padding: 50px 5px 10px 5px;
+    padding: 25px 5px 10px 5px;
+    width: 100%;
+    height: auto;
 }
 
 .footer_row {
@@ -763,7 +764,7 @@
 }
 
 .footer_layout hr {
-    margin-top: 30px;
+    margin-top: 0;
 }
 
 .nsxPL p {
@@ -777,8 +778,6 @@
 
 
 /* hết */
-
-
 
 
 /* responsive */
@@ -806,7 +805,7 @@
         display: block;
     }
      /* pha lê những điều khác biệt */
-     .nd_diff .row {
+    .nd_diff .row {
         display: grid;
         grid-template-rows: auto auto auto;
     }
@@ -822,16 +821,19 @@
         width: 100%;
         height: auto;
     }
+
     .imgofdiff img {
         width: 100%;
         height: auto;
     }
+
     .row .nd1 .topic1,
     .row .nd2 .topic2  {
         font-weight: 400;
         font-size: 18px;
         text-align: left;
     }
+
     .ndchinh1,
     .ndchinh2{
         font-size: 15px;
@@ -839,9 +841,7 @@
         color: var(--text-color);
         line-height: 25px;
     }
-    /* hết */
-
-    
+    /* hết */    
 }
 /* mobile width < 740px */
 @media only screen and  (max-width: 734px) {

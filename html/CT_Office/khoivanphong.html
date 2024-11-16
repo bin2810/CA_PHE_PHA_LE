@@ -4,11 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="../../css/bass.css">
     <link rel="stylesheet" href="../../css/main.css">
     <link rel="stylesheet" href="../../css/tuyendung.css">
     <link rel="stylesheet" href="../../css/khoivanphong.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="../../js_jquery/login.js"></script>
     <script src="../../js_jquery/navbar.js"></script>
@@ -25,55 +25,55 @@
             <div class="box">
                 <div class="grid">
                     <div class="nd_nav_btn-bars_repon_mobile">
-                            <div class="nd_nav_btn-bars_mobile">
-                                <i class="fa-solid fa-bars" id="bars_navbar"></i>
-                                <i class="fa-solid fa-xmark an_nut" id="exit_navbar"></i>
-                                <script>
-                                    $(document).ready(function() {
-                                        $("#bars_navbar").click(function() {
-                                            $(".nav_mobile").addClass('active');
-                                            $(this).hide();
-                                            $("#exit_navbar").show();
-                                        });
-
-                                        $("#exit_navbar").click(function() {
-                                            $(".nav_mobile").removeClass('active');
-                                            $("#exit_navbar").hide();
-                                            $("#bars_navbar").show();
-                                        });
+                        <div class="nd_nav_btn-bars_mobile">
+                            <i class="fa-solid fa-bars" id="bars_navbar"></i>
+                            <i class="fa-solid fa-xmark an_nut" id="exit_navbar"></i>
+                            <script>
+                                $(document).ready(function() {
+                                    $("#bars_navbar").click(function() {
+                                        $(".nav_mobile").addClass('active');
+                                        $(this).hide();
+                                        $("#exit_navbar").show();
                                     });
-                                </script>
-                                <div class="logo_mobile">
-                                    <a href="/index.html">
-                                        <img src="/image/trang_chủ/logo_trang.png" class="logo_nav" alt="">
-                                    </a>
-                                </div>
-                            </div>
-                        <div class="nav_mobile">
-                            <div class="nd_nav_repon">
-                                <a href="/html/CT_Page/Page_Product.html">
-                                    <p>SẢN PHẨM</p>
-                                </a>
-                                <a href="/html/CT_News/tintuc.html">
-                                    <p>TIN TỨC </p>
-                                </a>
-                                <a href="/html/CT_Shop/shop.html">
-                                    <p>CỬA HÀNG</p>
-                                </a>
-                                <a href="/html/CT_Office/tuyendung.html">
-                                    <p>TUYỂN DỤNG</p>
-                                </a>
-                                <a href="/html/Thanh_vien.html">
-                                    <p>THẺ THÀNH VIÊN</p>
-                                </a>
-                                <a href="/html/Lien_He.html">
-                                    <p>LIÊN HỆ</p>
-                                </a>
-                                <a href="/html/checkout.html">
-                                    <p>GIỎ HÀNG</p>
+
+                                    $("#exit_navbar").click(function() {
+                                        $(".nav_mobile").removeClass('active');
+                                        $("#exit_navbar").hide();
+                                        $("#bars_navbar").show();
+                                    });
+                                });
+                            </script>
+                            <div class="logo_mobile">
+                                <a href="/index.html">
+                                    <img src="/image/trang_chủ/logo_trang.png" class="logo_nav" alt="">
                                 </a>
                             </div>
                         </div>
+                    <div class="nav_mobile">
+                        <div class="nd_nav_repon">
+                            <a href="/html/CT_Page/Page_Product.html">
+                                <p>SẢN PHẨM</p>
+                            </a>
+                            <a href="/html/CT_News/tintuc.html">
+                                <p>TIN TỨC </p>
+                            </a>
+                            <a href="/html/CT_Shop/shop.html">
+                                <p>CỬA HÀNG</p>
+                            </a>
+                            <a href="/html/CT_Office/tuyendung.html">
+                                <p>TUYỂN DỤNG</p>
+                            </a>
+                            <a href="/html/Thanh_vien.html">
+                                <p>THẺ THÀNH VIÊN</p>
+                            </a>
+                            <a href="/html/Lien_He.html">
+                                <p>LIÊN HỆ</p>
+                            </a>
+                            <a href="/html/checkout.html">
+                                <p>GIỎ HÀNG</p>
+                            </a>
+                        </div>
+                    </div>
                     </div>
                     <div class="nd_nav_btn-bars_repon_tablet">
                         <div class="nd_nav_btn-bars_tablet">
@@ -94,7 +94,7 @@
                                     });
                                 });
                             </script>
-                          <div class="logo_mobile">
+                            <div class="logo_mobile">
                                 <a href="/index.html">
                                     <img src="/image/trang_chủ/logo_trang.png" class="logo_nav" alt="">
                                 </a>
@@ -103,7 +103,6 @@
                                 <button id="btnlogin_tablet" class="btnlogin">
                                     <img src="/image/trang_chủ/Login.png" width="50px" alt="">
                                 </button>
-                            </div>
                             </div>
                         </div>
                     
@@ -134,6 +133,7 @@
                         </div>
                     </div>
                     
+                    
                     <div class="cangiua_nav">
                         <div class="logo">
                            <a href="/index.html">
@@ -141,10 +141,10 @@
                             </a>
                         </div>
                         <div class="nd_nav">
-                            <a href="../html/Page_Product.html">
+                            <a href="/html/CT_Page/Page_Product.html">
                                 <p>SẢN PHẨM</p>
                             </a>
-                            <a href="../html/tintuc.html">
+                            <a href="/html/CT_News/tintuc.html">
                                 <p>TIN TỨC </p>
                             </a>
                             <a href="/html/CT_Shop/shop.html">
@@ -153,10 +153,10 @@
                             <a href="/html/CT_Office/tuyendung.html">
                                 <p>TUYỂN DỤNG</p>
                             </a>
-                            <a href="../html/Thanh_vien.html">
+                            <a href="/html/Thanh_vien.html">
                                 <p>THẺ THÀNH VIÊN</p>
                             </a>
-                            <a href="../html/Lien_He.html">
+                            <a href="/html/Lien_He.html">
                                 <p>LIÊN HỆ</p>
                             </a>
                         </div>
@@ -166,7 +166,7 @@
                             </button>
 
                             <button id="shopping_cart" class="btn_shopping_cart"> <!-- nút giõ hàng -->
-                                   <a href="/html/checkout.html"><img src="../../image/trang_chủ/Cartion.png" width="50px" alt=""></a>
+                                <a href="/html/checkout.html"><img src="../../image/trang_chủ/Cartion.png" width="50px" alt=""></a>
                             </button>
                         </div>
                     </div>
@@ -268,7 +268,7 @@
                                 <a href="/html/CT_Office/tuyendung.html">
                                     <p>> &nbsp; Tuyển Dụng</p>
                                 </a>
-                                <a href="../html/Lien_He.html">
+                                <a href="/html/Lien_He.html">
                                     <p>> &nbsp; Liên Hệ</p>
                                 </a>
                             </div>

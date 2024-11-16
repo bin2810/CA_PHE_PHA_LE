@@ -63,7 +63,7 @@ body {
 @media only screen and  (max-width: 1024px){
     body {
         margin: 0;
-        background-color: rgb(229, 226, 226, 0.2);
+        background-color: rgba(235, 234, 234, 0.2);
     }
     .grid {
         width: 100%;

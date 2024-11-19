@@ -221,3 +221,164 @@ input[type="button"]{
     background-color: var(--button-color);
     color: white;
 }
+
+
+@media only screen and (max-width: 500px){
+    h1{
+        text-align: center;
+        margin-top: 150px;
+    }
+    
+    .order-father{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        margin-bottom: 50px ;
+    }
+    .order-child-left{
+        padding: 20px;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between; 
+    }
+    .order-child-right{
+        background-color: white;
+        border-radius: 20px;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between; 
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+    .order-child-right-padding{
+        padding: 20px;
+        height: auto;
+    }
+    
+    .or-child-left-header{
+        display: flex;
+        justify-content:space-between;
+    
+    }
+    .or-child-left-header-1,
+    .or-child-left-header-2{
+        padding: 20px;
+        font-weight: 600;
+        font-size: 20px;
+    }
+    
+    .or-child-left-header-2 button{
+        background: none;
+        color: none;
+        padding: 10px;
+        border-radius: 15px;
+        border: 1px solid black;
+        cursor: pointer;
+    }
+    .under-body-content1{
+        display: flex;
+        grid-template-columns: 15% 80% 5%;
+        margin-top: 5px;
+    }
+    
+    .under-body-content2{
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+    }
+    
+    /* người nận hàng */
+    .txt_consignee{
+        width: 50%;
+        margin-top: 15px;
+        padding: 10px;
+    }
+    
+    .nb_consignee_phone{
+        width: 50%;
+        margin-top: 15px;
+        padding: 10px;
+    }
+    .txt_instruct_consignee{
+        width: 50%;
+        margin-top: 15px;
+        padding: 10px;
+    }
+    
+    .phuongthuctt{
+        margin-left: 0;
+    }
+    
+    .phuongthuctt img{
+        width: 24px;
+        margin: 0 10px 0 15px;
+    }
+    .phuongthuctt-item{
+        display: flex;
+        align-items: center; 
+        text-align: center;
+        border-bottom:1px solid rgb(217, 217, 217) ;
+        padding: 5px;
+        font-size: 12px;
+    }
+    
+    input[type="radio"] {
+        transform: scale(1.8); /* Phóng to kích thước radio button */
+    }
+    
+    
+    
+    
+    
+    
+    .product_display ul{
+        padding: 20px;
+       
+    }
+    
+    .thanhtien{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding:  10px 20px;
+        border-bottom:1px solid rgb(207, 206, 206) ;
+    }
+    
+    .phigiaohang{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding:  10px 20px;
+    }
+    .freeship{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding:  10px 20px;
+    
+    }
+    
+    .tongtien{
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: var(--button-color);
+        padding: 20px;
+        border-radius: 0 0 20px 20px;
+    
+    }
+    .tongtien button{
+       background-color: white;
+        border: none;
+        padding: 20px;
+        width: 150px;
+        border-radius: 40px;
+    
+    }
+    .tongtien p{
+       color: white;
+       font-size: 15px;
+     }
+    
+}

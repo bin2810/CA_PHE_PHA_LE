@@ -593,3 +593,19 @@
     }
 
 }
+
+@media only screen and (max-width: 400px){
+    .product_col_1,
+    .product_col_2,
+    .product_col_3 {
+        flex: 0 1 auto;
+        max-width: 100%;
+        /* width: 300px; */
+        height: auto;
+        border-radius: 10px;
+        background-color: var(--white-color);
+        transition: none;
+        padding: 10px;
+        order: 1;
+    }
+}

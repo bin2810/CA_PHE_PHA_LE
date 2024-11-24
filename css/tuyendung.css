@@ -7,7 +7,7 @@
     height: 425px;
     background-color: black;
     position: absolute;
-    opacity: 0%;
+    opacity: 40%;
     top: 200;
     transition: opacity 0.8s ease;
     opacity: 40%;
@@ -50,18 +50,21 @@
     height: 425px;
     overflow: hidden;
 }
+
 .gtth_box a.active,
-.gtth_box a:hover{
+.gtth_box a:hover {
     background-color: black;
     color: white;
 }
+
 .gtth_box_row {
-    display: flex;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 30px;
     justify-content: center;
 }
 
 .gtth_box {
-    margin: 20px 20px;
     border: 2px solid black;
 }
 
@@ -75,13 +78,14 @@
 }
 
 .gtth_content_layout {
-    width: 1170px;
+    width: 1145px;
     height: 370px;
     margin: 0 auto;
 }
 
 .gtth_content_row {
-    display: flex;
+    display: grid;
+    grid-template-columns: auto auto;
     justify-content: center;
     margin-top: 50px;
     background-color: var(--white-color);
@@ -92,12 +96,12 @@
 }
 
 .gtth_img img {
-    width: 520px;
+    width: 100%;
     height: 330px;
 }
 
 .gtth_content {
-    padding: 20px;
+    padding: 0px 30px 0 30px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -106,7 +110,7 @@
 }
 
 .content_quyenloi {
-    width: 950px;
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -121,78 +125,38 @@
 
 .quyenloi_box_row1 {
     display: grid;
-    grid-template-columns: 20% 20% 20%;
+    grid-template-columns: auto auto auto;
     justify-content: space-evenly;
 }
 
 
 /* Box quyen loi 1 */
 
-.quyenloi_box_row1 .quyenloi_box_col1 {
+.quyenloi_box_col1,
+.quyenloi_box_col2,
+.quyenloi_box_col3 {
     margin: 0 auto;
     background-color: var(--white-color);
     padding: 30px 100px;
 }
 
-.quyenloi_box_row1 .quyenloi_box_img1 {
+.quyenloi_box_img1,
+.quyenloi_box_img2,
+.quyenloi_box_img3 {
     display: flex;
     justify-content: center;
 }
 
-.quyenloi_box_row1 .quyenloi_box_topic1 {
+.quyenloi_box_topic1,
+.quyenloi_box_topic2,
+.quyenloi_box_topic3 {
     font-weight: bold;
     font-family: Arial, Helvetica, sans-serif;
     width: 220px;
 }
 
-.quyenloi_box_topic1 p {
-    text-align: center;
-}
-
-
-/* Box quyen loi 2 */
-
-.quyenloi_box_row1 .quyenloi_box_col2 {
-    margin: 0 auto;
-    background-color: var(--white-color);
-    padding: 40px 100px;
-}
-
-.quyenloi_box_row1 .quyenloi_box_img2 {
-    display: flex;
-    justify-content: center;
-}
-
-.quyenloi_box_row1 .quyenloi_box_topic2 {
-    font-weight: bold;
-    font-family: Arial, Helvetica, sans-serif;
-    width: 220px;
-}
-
-.quyenloi_box_topic2 p {
-    text-align: center;
-}
-
-
-/* Box quyen loi 3 */
-
-.quyenloi_box_row1 .quyenloi_box_col3 {
-    margin: 0 auto;
-    background-color: var(--white-color);
-    padding: 40px 100px;
-}
-
-.quyenloi_box_row1 .quyenloi_box_img3 {
-    display: flex;
-    justify-content: center;
-}
-
-.quyenloi_box_row1 .quyenloi_box_topic3 {
-    font-weight: bold;
-    font-family: Arial, Helvetica, sans-serif;
-    width: 220px;
-}
-
+.quyenloi_box_topic1,
+.quyenloi_box_topic2,
 .quyenloi_box_topic3 p {
     text-align: center;
 }
@@ -205,10 +169,10 @@
 
 .quyenloi_box_row2 {
     display: grid;
-    grid-template-columns: 40% 40%;
-    justify-content: center;
+    grid-template-columns: auto auto;
+    justify-content: space-evenly;
     margin: 30px auto;
-    width: 1300px;
+    width: 100%;
 }
 
 .quyenloi_box_row2 .quyenloi_box_col1 {
@@ -281,66 +245,32 @@
 
 /* STORY PHA LÊ ROW 1 */
 
-.plstory_row1 {
+.plstory_row {
     display: grid;
     grid-template-columns: auto auto auto;
-    justify-content: center;
+    margin-bottom: 40px;
+    justify-content: space-around;
+    padding: 0 100px;
 }
 
-.plstory_row1 .plstory_col {
-    height: 500px;
-    width: 400px;
-    margin: 0 20px;
-    padding: 22px 0;
+.plstory_col {
+    width: 100%;
+    height: auto;
+    padding: 20px;
     background-color: var(--white-color);
 }
 
-.plstory_row1 .plstory_col .plstory_img {
+.plstory_img {
     display: flex;
     justify-content: center;
 }
 
-.plstory_row1 .plstory_col .plstory_img img {
-    width: 350px;
+.plstory_img img {
+    width: 100%;
+    height: auto;
 }
 
-.plstory_row1 .plstory_col .plstory_topic {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 18px;
-    text-align: center;
-    font-weight: 600;
-    margin-top: 20px;
-}
-
-
-/* STORY PHA LÊ ROW 2 */
-
-.plstory_row2 {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    justify-content: center;
-    margin-top: 20px;
-    margin-bottom: 100px;
-}
-
-.plstory_row2 .plstory_col {
-    height: 500px;
-    width: 400px;
-    margin: 0 20px;
-    padding: 22px 0;
-    background-color: var(--white-color);
-}
-
-.plstory_row2 .plstory_col .plstory_img {
-    display: flex;
-    justify-content: center;
-}
-
-.plstory_row2 .plstory_col .plstory_img img {
-    width: 350px;
-}
-
-.plstory_row2 .plstory_col .plstory_topic {
+.plstory_topic {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 18px;
     text-align: center;
@@ -388,20 +318,20 @@
     padding: 10px;
 }
 
-.form_content_row1 .name_content p {
+.name_content p {
     margin: 7px 0;
 }
 
-.form_content_row1 .name_content input {
+.name_content input {
     width: 300px;
     height: 40px;
 }
 
-.form_content_row1 .number_content p {
+.number_content p {
     margin: 7px 0;
 }
 
-.form_content_row1 .number_content input {
+.number_content input {
     width: 300px;
     height: 40px;
 }
@@ -412,20 +342,20 @@
     padding: 10px;
 }
 
-.form_content_row2 .email_content p {
+.email_content p {
     margin: 7px 0;
 }
 
-.form_content_row2 .email_content input {
+.email_content input {
     width: 300px;
     height: 40px;
 }
 
-.form_content_row2 .date_content p {
+.date_content p {
     margin: 7px 0;
 }
 
-.form_content_row2 .date_content input {
+.date_content input {
     width: 300px;
     height: 40px;
 }
@@ -436,17 +366,21 @@
     padding: 10px;
 }
 
-.form_content_row3 .ungtuyen_content p {
+.ungtuyen_content p {
     margin: 7px 0;
 }
-
+.ungtuyen_content textarea{
+        width: 48.5em; 
+        height: 50px; 
+        resize: none; 
+}
 .form_content_row4 {
     display: flex;
     padding: 10px;
     margin-left: 40px;
 }
 
-.form_content_row4 .uploadcv_content p {
+.uploadcv_content p {
     margin: 7px 0;
 }
 
@@ -472,21 +406,22 @@
 
 /* THÊM PHẦN KHỐI VĂN PHÒNG  */
 
-.another_office {
-    display: flex;
+.khoivanphong_layout {
+    display: grid;
+    grid-template-columns: 40% 40%;
+    gap: 40px;
     justify-content: center;
     margin-top: 50px;
     margin-bottom: 40px;
 }
 
-.another_office .khoivanphong_col {
-    margin: 0 30px;
+.khoivanphong_layout .khoivanphong_col {
+    height: auto;
     padding: 30px;
     box-shadow: 4px 4px 10px gray;
 }
 
-.another_office .khoicuahang_col {
-    margin: 0 30px;
+.khoivanphong_layout .khoicuahang_col {
     padding: 30px;
     box-shadow: 4px 4px 10px gray;
 }
@@ -495,14 +430,14 @@
 /* HÌNH ẢNH */
 
 .khoivanphong_col .khoivanphong_img img {
-    width: 500px;
-    height: 300px;
+    width: 100%;
+    height: auto;
     transition: transform 0.5s ease;
 }
 
 .khoivanphong_col .khoivanphong_img {
-    width: 500px;
-    height: 300px;
+    width: 100%;
+    height: auto;
     overflow: hidden;
 }
 
@@ -511,14 +446,14 @@
 }
 
 .khoicuahang_col .khoicuahang_img img {
-    width: 500px;
-    height: 300px;
+    width: 100%;
+    height: auto;
     transition: transform 0.5s ease;
 }
 
 .khoicuahang_col .khoicuahang_img {
-    width: 500px;
-    height: 300px;
+    width: 100%;
+    height: auto;
     overflow: hidden;
 }
 
@@ -526,16 +461,14 @@
     transform: scale(1.1);
 }
 
-.khoivanphong_col .khoivanphong_topic p {
+.khoivanphong_topic p {
     font-size: 23px;
     font-weight: bold;
-    margin: 15px 0px;
 }
 
-.khoicuahang_col .khoicuahang_topic p {
+.khoicuahang_topic p {
     font-size: 23px;
     font-weight: bold;
-    margin: 15px 0px;
 }
 
 .office_nut {
@@ -552,4 +485,225 @@
 
 .office_nut a:hover {
     background-color: var(--button-color);
+}
+
+@media only screen and (max-width: 1200px) {
+    .lop_phu_banner {
+        width: 100%;
+        height: auto;
+        background-color: black;
+        position: absolute;
+        opacity: 0%;
+        top: 200;
+        transition: opacity 0.8s ease;
+        opacity: 40%;
+    }
+    .banner_shop img {
+        width: 100%;
+        height: 400px;
+        object-fit: cover;
+    }
+}
+
+@media only screen and (max-width: 734px) {
+    .lop_phu_banner {
+        width: 100%;
+        height: 471px;
+        background-color: black;
+        position: absolute;
+        opacity: 40%;
+        top: 0;
+    }
+    .cangiua_banner h1 {
+        font-size: 26px;
+        font-weight: normal;
+        position: absolute;
+        left: 50%;
+        top: 20%;
+        transform: translateX(-50%);
+        color: var(--white-color);
+    }
+    .header_banner_shop a {
+        font-weight: normal;
+        position: absolute;
+        left: 50%;
+        top: 30%;
+        transform: translateX(-50%);
+        color: var(--white-color);
+        padding: 8px 35px;
+        background-color: #c09785;
+        text-decoration: none;
+        font-weight: bold;
+        transition: background-color 0.5s ease, transform 0.5s ease;
+    }
+    .khoivanphong_layout {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        justify-content: center;
+        margin-top: 50px;
+        margin-bottom: 40px;
+        flex-wrap: wrap;
+        padding: 10px;
+    }
+    .khoivanphong_col,
+    .khoicuahang_col {
+        height: auto;
+        padding: 30px;
+        box-shadow: 4px 4px 10px rgb(163, 163, 163, 0.2);
+    }
+    .khoivanphong_topic p {
+        font-size: 20px;
+        font-weight: bold;
+    }
+    .khoicuahang_topic p {
+        font-size: 20px;
+        font-weight: bold;
+    }
+    .office_nut a {
+        padding: 15px 25px;
+        margin: 0 25px;
+        text-decoration: none;
+        color: var(--white-color);
+        transition: background-color 0.5s ease, transform 0.5s ease;
+        background-color: #c09785;
+    }
+    .office_nut a:hover {
+        background-color: var(--button-color);
+    }
+    .gtth_box_row {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        justify-content: center;
+        padding: 10px;
+    }
+    .gtth_content_layout {
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+        padding: 10px;
+    }
+    .gtth_content_row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 50px;
+        background-color: var(--white-color);
+    }
+    .gtth_img img {
+        width: 100%;
+        height: auto;
+    }
+    .content_quyenloi p {
+        font-size: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+    }
+    .quyenloi_box_row1 {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        width: 100%;
+        height: auto;
+    }
+    .quyenloi_box_col1,
+    .quyenloi_box_col2,
+    .quyenloi_box_col3 {
+        margin-top: 20px;
+        background-color: var(--white-color);
+        padding: 20px 120px;
+    }
+    .quyenloi_box_row2 {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .quyenloi_box_row2 .quyenloi_box_col2,
+    .quyenloi_box_col2 {
+        margin-top: 20px;
+        background-color: var(--white-color);
+        padding: 20px 120px;
+    }
+    .quyenloi_box_row2 .quyenloi_box_img2 {
+        display: flex;
+        justify-content: center;
+    }
+    .plstory_row {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 20px;
+        padding: 20px 60px;
+        width: 100%;
+        justify-content: space-around;
+        margin-bottom: 0px;
+    }
+    .plstory_col {
+        width: 100%;
+        height: auto;
+        background-color: var(--white-color);
+    }
+    .plstory_img img {
+        width: 100%;
+        height: auto;
+    }
+    .plstory_img{
+        display: flex;
+        justify-content: center ;
+    }
+        
+    .form_layout {
+        width: 470px;
+        height: auto;
+        background-color: var(--white-color);
+        padding: 20px;
+        margin: 0 auto;
+    }
+        
+    .form_content_row1 ,.form_content_row2 {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding: 0px;
+    }
+    
+    .name_content input {
+        width: 100%;
+        height: 40px;
+    }
+    .number_content input {
+        width: 100%;
+        height: 40px;
+    }
+    .email_content input{
+        width: 100%;
+        height: 40px;
+    }
+    .date_content input{
+        width: 100%;
+        height: 40px;
+    }
+    .ungtuyen_content textarea{
+        width: 32.4em; 
+        height: 50px; 
+        resize: none; 
+    }
+    .form_content_row4 {
+        display: flex;
+        padding: 10px;
+        margin-left: 0px;
+    }
+    
+    .nut_ungtuyen a {
+        font-weight: normal;
+        color: var(--white-color);
+        padding: 10px 10.5em;
+        background-color: #c09785;
+        text-decoration: none;
+        transition: background-color 0.5s ease, transform 0.5s ease;
+    }
+
+    .nut_ungtuyen a:hover {
+        background-color: var(--button-color);
+    }
+
+
 }

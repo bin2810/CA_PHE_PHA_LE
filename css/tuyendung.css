@@ -132,32 +132,25 @@
 
 /* Box quyen loi 1 */
 
-.quyenloi_box_col1,
-.quyenloi_box_col2,
-.quyenloi_box_col3 {
-    margin: 0 auto;
+.quyenloi_box_col {
+    margin: 10px auto;
     background-color: var(--white-color);
     padding: 30px 100px;
+    
 }
 
-.quyenloi_box_img1,
-.quyenloi_box_img2,
-.quyenloi_box_img3 {
+.quyenloi_box_img{
     display: flex;
     justify-content: center;
 }
 
-.quyenloi_box_topic1,
-.quyenloi_box_topic2,
-.quyenloi_box_topic3 {
+.quyenloi_box_topic{
     font-weight: bold;
     font-family: Arial, Helvetica, sans-serif;
-    width: 220px;
+    width: 100%;
 }
 
-.quyenloi_box_topic1,
-.quyenloi_box_topic2,
-.quyenloi_box_topic3 p {
+.quyenloi_box_topic p {
     text-align: center;
 }
 
@@ -175,26 +168,8 @@
     width: 100%;
 }
 
-.quyenloi_box_row2 .quyenloi_box_col1 {
-    margin: 0 auto;
-    background-color: var(--white-color);
-    padding: 30px 130px;
-}
 
-.quyenloi_box_row2 .quyenloi_box_img1 {
-    display: flex;
-    justify-content: center;
-}
 
-.quyenloi_box_row2 .quyenloi_box_topic1 {
-    font-weight: bold;
-    font-family: Arial, Helvetica, sans-serif;
-    width: 220px;
-}
-
-.quyenloi_box_topic1 p {
-    text-align: center;
-}
 
 
 /* Box quyen loi 2 */
@@ -608,9 +583,10 @@
     .quyenloi_box_col1,
     .quyenloi_box_col2,
     .quyenloi_box_col3 {
+        width: 100%;
         margin-top: 20px;
         background-color: var(--white-color);
-        padding: 20px 120px;
+        padding: 20px 0px;
     }
     .quyenloi_box_row2 {
         display: grid;
@@ -620,7 +596,7 @@
     .quyenloi_box_col2 {
         margin-top: 20px;
         background-color: var(--white-color);
-        padding: 20px 120px;
+        padding: 20px 0px;
     }
     .quyenloi_box_row2 .quyenloi_box_img2 {
         display: flex;
@@ -651,7 +627,7 @@
     }
         
     .form_layout {
-        width: 470px;
+        width: 100%;
         height: auto;
         background-color: var(--white-color);
         padding: 20px;
@@ -670,7 +646,7 @@
         height: 40px;
     }
     .number_content input {
-        width: 100%;
+        width: 50%;
         height: 40px;
     }
     .email_content input{
@@ -682,7 +658,7 @@
         height: 40px;
     }
     .ungtuyen_content textarea{
-        width: 32.4em; 
+        width: 20em; 
         height: 50px; 
         resize: none; 
     }

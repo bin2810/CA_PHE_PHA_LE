@@ -235,22 +235,27 @@ input[type="radio"] {
    background-color: var(--dark-green);
 }
 
-@media only screen and  (max-width: 734px) {
+@media only screen and  (max-width: 500px) {
+    .main{
+        padding: 20px;
+    }
     .product_layout {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(480px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
         margin: 0;
         justify-content: center;
+        align-items: center;
     }
 
         
     .img_product {
-        padding: 0 30px;
+        padding: 0;
         margin: 20px 0;
     }
 
     .img_product img {
         padding: 0;
+        width: 100%;
     }
 
     .img_product a {
@@ -261,7 +266,7 @@ input[type="radio"] {
 
     
 .information_product {
-    padding: 0 30px;
+    padding: 0;
     margin: 5px 0;
 }
 

@@ -1,10 +1,11 @@
 .tt_content_layout{
+    width: 100%;
     display: flex;
     justify-content: center;
 }
 .tt_content_layout p{
     width:1200px;
-    font-size: 20px;
+    font-size: 18   px;
 }
 .tt_content_col .tt_content_img{
     display: flex;
@@ -12,4 +13,23 @@
 }
 .tt_content_col .tt_content_img img{
     width: 650px;
+}
+@media only screen and (max-width: 734px) {
+    .tt_content_layout{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        padding: 20px;
+    }
+    .tt_content_layout p{
+        width:100%;
+        font-size: 17px;
+    }
+    .tt_content_col .tt_content_img{
+        margin: 0 auto;
+    }
+    .tt_content_col .tt_content_img img{
+        width: 100%;
+    }
+
 }

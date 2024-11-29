@@ -127,16 +127,20 @@
     display: grid;
     grid-template-columns: auto auto auto;
     justify-content: space-evenly;
+    gap: 40px;
 }
 
 
-/* Box quyen loi 1 */
-
 .quyenloi_box_col {
-    margin: 10px auto;
+    margin: 20px auto;
     background-color: var(--white-color);
-    padding: 30px 100px;
-    
+    height: 200px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;   
 }
 
 .quyenloi_box_img{
@@ -163,37 +167,24 @@
 .quyenloi_box_row2 {
     display: grid;
     grid-template-columns: auto auto;
-    justify-content: space-evenly;
+    justify-content: center;
     margin: 30px auto;
+    gap: 100px;
     width: 100%;
 }
 
-
-
-
-
-/* Box quyen loi 2 */
-
-.quyenloi_box_row2 .quyenloi_box_col2 {
-    margin: 0 auto;
+.quyenloi_box_col2 {
+    margin: 20px auto;
     background-color: var(--white-color);
-    padding: 40px 130px;
-}
-
-.quyenloi_box_row2 .quyenloi_box_img2 {
+    height: 200px;
+    width: 400px;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+    box-sizing: border-box;
 }
 
-.quyenloi_box_row2 .quyenloi_box_topic2 {
-    font-weight: bold;
-    font-family: Arial, Helvetica, sans-serif;
-    width: 220px;
-}
-
-.quyenloi_box_topic2 p {
-    text-align: center;
-}
 
 .ungtuyenngay {
     display: flex;
@@ -480,7 +471,7 @@
     }
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 734px) {
     .lop_phu_banner {
         width: 100%;
         height: 471px;
@@ -569,39 +560,68 @@
         width: 100%;
         height: auto;
     }
-    .content_quyenloi p {
-        font-size: 20px;
-        font-family: Arial, Helvetica, sans-serif;
-        text-align: center;
-    }
+        
     .quyenloi_box_row1 {
         display: grid;
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: repeat(1,1fr);
+        justify-content: center;
+        padding: 20px;
+    }
+    
+    
+    .quyenloi_box_col {
+        margin: 20px auto;
+        background-color: var(--white-color);
         width: 100%;
         height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        box-sizing: border-box;   
+        padding: 30px 0px;
     }
-    .quyenloi_box_col1,
-    .quyenloi_box_col2,
-    .quyenloi_box_col3 {
-        width: 100%;
-        margin-top: 20px;
-        background-color: var(--white-color);
-        padding: 20px 0px;
-    }
-    .quyenloi_box_row2 {
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-    }
-    .quyenloi_box_row2 .quyenloi_box_col2,
-    .quyenloi_box_col2 {
-        margin-top: 20px;
-        background-color: var(--white-color);
-        padding: 20px 0px;
-    }
-    .quyenloi_box_row2 .quyenloi_box_img2 {
+    
+    .quyenloi_box_img{
         display: flex;
         justify-content: center;
     }
+    
+    .quyenloi_box_topic{
+        font-weight: bold;
+        font-family: Arial, Helvetica, sans-serif;
+        width: 100%;
+    }
+    
+    .quyenloi_box_topic p {
+        text-align: center;
+    }
+    
+    
+    /* Box quyen loi row 2 */
+    
+    
+    .quyenloi_box_row2 {
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        justify-content: center;
+        padding: 20px;
+
+    }
+    
+    .quyenloi_box_col2 {
+        margin: 20px auto;
+        background-color: var(--white-color);
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center; 
+        align-items: center; 
+        box-sizing: border-box;
+        padding: 30px 0px;
+    }
+    
     .plstory_row {
         display: flex;
         flex-direction: column;
@@ -638,7 +658,6 @@
         display: flex;
         justify-content: center;
         flex-direction: column;
-        padding: 0px;
     }
     
     .name_content input {
@@ -646,7 +665,7 @@
         height: 40px;
     }
     .number_content input {
-        width: 50%;
+        width: 100%;
         height: 40px;
     }
     .email_content input{
@@ -658,8 +677,8 @@
         height: 40px;
     }
     .ungtuyen_content textarea{
-        width: 20em; 
-        height: 50px; 
+        width: 26em; 
+        height: 100px; 
         resize: none; 
     }
     .form_content_row4 {
@@ -671,7 +690,7 @@
     .nut_ungtuyen a {
         font-weight: normal;
         color: var(--white-color);
-        padding: 10px 10.5em;
+        padding: 10px 50px;
         background-color: #c09785;
         text-decoration: none;
         transition: background-color 0.5s ease, transform 0.5s ease;
@@ -680,6 +699,16 @@
     .nut_ungtuyen a:hover {
         background-color: var(--button-color);
     }
-
+    .form_background {
+        background-image: url(../image/tuyen_dung/backgroundform.PNG);
+        height: auto;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        align-items: center;
+        padding: 10px;
+    }
 
 }

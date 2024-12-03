@@ -79,6 +79,13 @@ iframe{
         top: 200;
         transition: opacity 0.8s ease;
     }
+    .image-container {
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+        margin-bottom: 20px;
+    }
+    
     .header_banner_shop h1 {
         font-size: 20px;
         width: 90%;
@@ -96,7 +103,7 @@ iframe{
         display: flex;
         flex-direction: column;
         justify-content: center;
-        margin-top: 50px;
+        margin-top: 0px;
         margin-bottom: 50px;
     }
     .map_infomation {
@@ -109,7 +116,7 @@ iframe{
     }
     iframe{
         width:100%;
-        height:auto;
+        height: 400px;
     }
     
 }

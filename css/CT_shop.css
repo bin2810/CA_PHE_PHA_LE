@@ -75,7 +75,7 @@ iframe{
         height: auto;
         background-color: black;
         position: absolute;
-        opacity: 40%;
+        opacity: 190%;
         top: 200;
         transition: opacity 0.8s ease;
     }
@@ -87,16 +87,18 @@ iframe{
     }
     
     .header_banner_shop h1 {
-        font-size: 20px;
+        font-size: 18px;
         width: 90%;
         font-weight: normal;
         position: absolute;
         left: 50%;
         top: 50%;
         transform: translateX(-50%);
-        color: black;
+        color: rgb(41, 40, 40,10);
         font-weight: bold;
         text-align: center;
+        color: var(--white-color);
+        text-shadow: 10px 10px 10px black;
     }
     
     .map_content_layout {

@@ -4,13 +4,13 @@ h1{
 }
 
 .order-father{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
     margin-bottom: 50px ;
 }
 .order-child-left{
-   
+    width: 500px;
     padding: 20px;
     height: auto;
     display: flex;
@@ -18,6 +18,7 @@ h1{
     justify-content: space-between; 
 }
 .order-child-right{
+    width: 500px;
     background-color: white;
     border-radius: 20px;
     height: auto;
@@ -42,7 +43,10 @@ h1{
     font-weight: 600;
     font-size: 20px;
 }
-
+.or-child-left-header-under hr{
+    width: 400px;
+    opacity: 50%;
+}
 .or-child-left-header-2 button{
     background: none;
     color: none;
@@ -56,7 +60,9 @@ h1{
     grid-template-columns: 15% 80% 5%;
     margin-top: 5px;
 }
-
+.under-body-content1-icon{
+    display: none;
+}
 .under-body-content2{
     display: grid;
     grid-template-columns: 15% 80% 5%;
@@ -224,38 +230,43 @@ input[type="button"]{
 
 
 @media only screen and (max-width: 500px){
+    .main{
+        padding: 20px;
+    }
     h1{
         text-align: center;
         margin-top: 150px;
     }
     
     .order-father{
-        display: flex;
-        flex-wrap: wrap;
-        gap: 20px;
+        display: unset;
         margin-bottom: 50px ;
     }
     .order-child-left{
-        padding: 20px;
+        padding: 0px;
         height: auto;
-        display: flex;
+        display: unset;
         flex-direction: column;
         justify-content: space-between; 
+        margin: 20px 0;
     }
     .order-child-right{
         background-color: white;
         border-radius: 20px;
         height: auto;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between; 
+        width: 100%;
+        display: unset; 
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        margin: 20px 0;
+    }
+    .or-child-left-header-under hr{
+        width: 100%;
+        opacity: 50%;
     }
     .order-child-right-padding{
-        padding: 20px;
+        padding: 0;
         height: auto;
     }
-    
     .or-child-left-header{
         display: flex;
         justify-content:space-between;
@@ -263,7 +274,7 @@ input[type="button"]{
     }
     .or-child-left-header-1,
     .or-child-left-header-2{
-        padding: 20px;
+        padding: 0px;
         font-weight: 600;
         font-size: 20px;
     }
@@ -278,30 +289,28 @@ input[type="button"]{
     }
     .under-body-content1{
         display: flex;
-        grid-template-columns: 15% 80% 5%;
+        justify-content: space-around;
         margin-top: 5px;
     }
     
     .under-body-content2{
-        display: flex;
-        flex-direction: column;
-        margin-top: 10px;
+        display: none;
     }
     
     /* người nận hàng */
     .txt_consignee{
-        width: 50%;
+        width: 100%;
         margin-top: 15px;
         padding: 10px;
     }
     
     .nb_consignee_phone{
-        width: 50%;
+        width: 100%;
         margin-top: 15px;
         padding: 10px;
     }
     .txt_instruct_consignee{
-        width: 50%;
+        width: 100%;
         margin-top: 15px;
         padding: 10px;
     }
@@ -333,7 +342,7 @@ input[type="button"]{
     
     
     .product_display ul{
-        padding: 20px;
+        padding: 0px;
        
     }
     
@@ -379,6 +388,17 @@ input[type="button"]{
     .tongtien p{
        color: white;
        font-size: 15px;
-     }
+    }
+
+    .form_address{
+        background-color: white;
+        border-radius: 10px;
+        padding: 20px;
+        text-align: center;
+        width: 800px;
+        height: 250px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+        position: relative;
+    }
     
 }

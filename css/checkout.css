@@ -109,7 +109,9 @@ input[type="radio"] {
 }
 
 
-
+.hr_checkout{
+    border: 2px solid var(--dark-green);
+}
 
 
 
@@ -144,7 +146,7 @@ input[type="radio"] {
     display:flex;
     justify-content: space-between;
     align-items: center;
-    background-color: var(--button-color);
+    background-color: var(--dark-green);
     padding: 20px;
     border-radius: 0 0 20px 20px;
 
@@ -226,6 +228,7 @@ input[type="button"]{
     border: none;
     background-color: var(--button-color);
     color: white;
+    cursor: pointer;
 }
 
 
@@ -372,7 +375,7 @@ input[type="button"]{
         display:flex;
         justify-content: space-between;
         align-items: center;
-        background-color: var(--button-color);
+        background-color: var(--dark-green);
         padding: 20px;
         border-radius: 0 0 20px 20px;
     

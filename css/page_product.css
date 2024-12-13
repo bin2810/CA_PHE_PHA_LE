@@ -195,11 +195,11 @@
 }
 
 .product_information_money {
-    font-size: 15px;
-    margin: 5px 5px 5px 5px;
-    color: var(--white-color);
+    font-size: 16px;
+    color: var(--dark-green);
     font-weight: bold;
     text-decoration: none;
+    text-align: center;
 }
 
 .product_information_button a {

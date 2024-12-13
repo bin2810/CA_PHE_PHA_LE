@@ -41,27 +41,53 @@
     justify-content: space-between;
     width: 100%;
 }
-
 .nd_nav {
     display: flex;
+    gap: 40px;
     justify-content: center;
-    margin: 0 40px;
+    align-items: center;
 }
 
-.nd_nav p {
-    margin: 0 20px;
-    color: white;
-    font-weight: bold;
-    font-size: 16px;
+.nd_nav a {
+    text-decoration: none;
+    position: relative;
+    font-size: 15px;
+    transition: transform 0.3s ease;
 }
+
+.nd_nav a p {
+    margin: 0 ;
+    padding: 5px 0px;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+
+.nd_nav a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--white-color);
+    transition: width 0.3s ease;
+}
+
+.nd_nav a:hover {
+    transform: scale(1.1);
+}
+
+.nd_nav a:hover::after {
+    width: 100%;
+}
+
 
 .nd_nav img {
     margin: 0 20px;
 }
 
-.nd_nav a {
-    text-decoration: none;
-}
+
 
 .icons {
     flex: 1;
@@ -325,9 +351,9 @@
 .spnb_info .price{
     margin-top: 30px;
     font-weight: bold;
-    margin-left: 30px;
-    font-size: 14px;
-    color: var(--white-color);
+    text-align: center;
+    font-size: 16px;
+    color: var(--dark-green);
 
 }
 
@@ -353,6 +379,15 @@
     text-align: left;
     /* Đưa tên sản phẩm sang bên trái */
     transform: translateX(-10px);
+    /* Di chuyển sang bên trái */
+    transition: transform 0.4s ease;
+    /* Thêm hiệu ứng chuyển tiếp */
+    margin-left: 35px;
+}
+.move-left2 {
+    text-align: left;
+    /* Đưa tên sản phẩm sang bên trái */
+    transform: translateX(-110px);
     /* Di chuyển sang bên trái */
     transition: transform 0.4s ease;
     /* Thêm hiệu ứng chuyển tiếp */
@@ -932,16 +967,16 @@
 
 
     .row_spnb {
-        margin: 30px 0px;
+        width: 700px;
+        margin: 30px auto;
         display: flex;
         flex-wrap: wrap;
-        justify-content: left;
+        justify-content: space-between;
         align-items: center;
-        flex: auto;
     }
     
     .spnb {
-        margin: 10px auto;
+        margin: 10px 0;
         width: 300px;
         height: 460px;
         border-radius: 10px;

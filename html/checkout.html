@@ -31,10 +31,10 @@
             <div class="form_address">
                 <img src="../image/checkout/iconorder.png" alt="">
                 <div class="nhap_address">
-                    <input type="text" class="txt-address" id="" placeholder="Nhập địa chỉ"> 
+                    <input type="text" class="txt-address" id="txt_address" placeholder="Nhập địa chỉ"> 
                     <p>
-                        <input type="button" value="Chọn địa chỉ này">
-                        <input type="button" value="Chọn địa chỉ này">
+                        <input type="button" id="btn_address_close" value="Chọn địa chỉ này">
+                        <input type="button" id="btn_new_address" value="Nhập địa chỉ mới">
                     </p>
                     
                 </div>
@@ -200,7 +200,7 @@
                         <div class="or-child-left-header">
                             <div class="or-child-left-header-1">
                                 <span>Giao Hàng</span>
-                                <hr style=" border: 2px solid #BE7352;">
+                                <hr class="hr_checkout">
                             </div>
                             <div class="or-child-left-header-2">
                                 <button id="btn_doi-phuong-thuc" >Đổi Địa Chỉ Giao Hàng</button>
@@ -212,7 +212,7 @@
                                     <img src="../image/checkout/iconorder.png" width="40px" alt="">
                                 </div>
                                 <div class="under-body-content1-diachi">
-                                    <span>18/24/56 nguyễn văn chinh p15 Q15</span>    
+                                    <span id="hide_address"></span>    
                                 </div>
                                 <div class="under-body-content1-icon">
                                     <i class="fa-solid fa-chevron-right" style="font-size: 25px;"></i>   
@@ -224,9 +224,7 @@
                                     <div class="lop" style="background-color: white; width: 40px; height: 40px;"></div>
                                 </div>
                                 <div class="under-body-content2-diachi">
-                                    <span>Nhận hàng trong ngày </span><span>15-30 phút</span>
-                                    <br>
-                                    <span>Vào lúc:</span>    
+                                    <span>Nhận hàng trong ngày </span><span>15-30 phút</span>  
                                 </div>
                                 <div class="under-body-content2-icon">
                                     <i class="fa-solid fa-chevron-right" style="font-size: 25px;"></i>   
@@ -239,7 +237,7 @@
                         <div class="or-child-left-header">
                             <div class="or-child-left-header-1">
                                 <span>Phương thức thanh toán</span>
-                                <hr style=" border: 2px solid #BE7352;">
+                                <hr class="hr_checkout">
                             </div>
                         </div>
                         <div class="phuongthuctt">
@@ -269,7 +267,7 @@
                             <div class="or-child-left-header">
                                 <div class="or-child-left-header-1">
                                     <span>Các món đã chọn</span>
-                                    <hr style=" border: 2px solid #BE7352;">
+                                    <hr class="hr_checkout">
                                 </div>
                                 <div class="or-child-left-header-2">
                                     <a href="/html/CT_Page/Page_Product.html"><button >Thêm món</button></a>
@@ -283,7 +281,7 @@
                                 <div class="or-child-left-header">
                                     <div class="or-child-left-header-2">
                                         <span>Tổng tiền</span>
-                                        <hr style=" border: 2px solid #BE7352;">
+                                        <hr class="hr_checkout">
                                     </div>
                                 </div>
 

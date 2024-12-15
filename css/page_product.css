@@ -193,6 +193,11 @@
     transition: color 0.4s ease, transform 0.4s ease;
     /* Thêm hiệu ứng chuyển tiếp cho màu sắc */
 }
+.demo5 {
+    color: var(--white-color)!important;
+    transition: color 0.4s ease, transform 0.4s ease;
+    /* Thêm hiệu ứng chuyển tiếp cho màu sắc */
+}
 
 .product_information_money {
     font-size: 16px;
@@ -442,6 +447,11 @@
         transition: color 0.4s ease, transform 0.4s ease;
         /* Thêm hiệu ứng chuyển tiếp cho màu sắc */
     }
+    .demo5 {
+        color: var(--button-color)!important;
+        transition: color 0.4s ease, transform 0.4s ease;
+        /* Thêm hiệu ứng chuyển tiếp cho màu sắc */
+    }
     
     .product_information_money {
         font-size: 17px;
@@ -450,6 +460,8 @@
         font-weight: bold;
         text-decoration: none;
         color: var(--button-color);
+        text-align: left;
+
     }
     
     .product_information_button a {
@@ -569,6 +581,11 @@
         transition: color 0.4s ease, transform 0.4s ease;
         /* Thêm hiệu ứng chuyển tiếp cho màu sắc */
     }
+    .demo5 {
+        color: var(--button-color)!important;
+        transition: color 0.4s ease, transform 0.4s ease;
+        /* Thêm hiệu ứng chuyển tiếp cho màu sắc */
+    }
     
     .product_information_money {
         font-size: 15px;
@@ -577,6 +594,7 @@
         font-weight: bold;
         text-decoration: none;
         color: var(--button-color);
+        text-align: left;
     }
     
     .product_information_button a {

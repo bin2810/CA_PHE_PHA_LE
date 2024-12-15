@@ -106,7 +106,7 @@
 }
 /* SAN PHAM 1 */
 .spnb_col{
-    height: 470px;
+    height: 500px;
     width:300px ;
     padding: 20px;
     border-radius: 10px;
@@ -120,15 +120,20 @@
 }
 /* Phan ten san pham */
 .spnb_topic {
-    color: var(--white-color);
+    color: var(--dark-green);
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 16px;
+    padding: 10px 0 ;
+}
+.demo_tintuc{
+    text-align: center;
 }
 /* Phan gia tien */
 .spnb_cost{
-    color: var(--white-color);
+    color: var(--dark-green);
     font-weight: bold;
+    text-align: center;
 }
 
 /* ANIMATION */
@@ -244,6 +249,48 @@
             background-color:var(--white-color);
             transform: scale(1);
         }
+        
+        .demo_tintuc{
+            text-align: left;
+        }
+        .move-left1 {
+            text-align: left;
+            /* Đưa tên sản phẩm sang bên trái */
+            transform: none;
+            /* Di chuyển sang bên trái */
+            transition: transform 0.4s ease;
+            /* Thêm hiệu ứng chuyển tiếp */
+            margin-left: 35px;
+        }
+        .move-left1_tintuc {
+            text-align: left;
+            /* Đưa tên sản phẩm sang bên trái */
+            transform: none;
+            /* Di chuyển sang bên trái */
+            transition: none;
+            /* Thêm hiệu ứng chuyển tiếp */
+            margin-left: 0;
+        }
+        .move-left2 {
+            text-align:left;
+            /* Đưa tên sản phẩm sang bên trái */
+            transform: none;
+            /* Di chuyển sang bên trái */
+            transition: none;
+            /* Thêm hiệu ứng chuyển tiếp */
+            margin-left: 0;
+        }
+        
+        .demo4 {
+            color: var(--dark-green)!important;
+            transition: none;
+            /* Thêm hiệu ứng chuyển tiếp cho màu sắc */
+        }
+        .demo5 {
+            color: var(--button-color)!important;
+            transition: color 0.4s ease, transform 0.4s ease;
+            /* Thêm hiệu ứng chuyển tiếp cho màu sắc */
+        }
     }
 
 
@@ -322,7 +369,7 @@
     .spnb_cost{
         color: var(--button-color);
         padding-left: 20px;
-
+        text-align: left;
     }
     .spnb_topic{
         padding: 0 20px;
@@ -334,7 +381,47 @@
         background-color:var(--white-color);
         transform: scale(1);
     }
+    .demo_tintuc{
+        text-align: left;
+    }
+    .move-left1 {
+        text-align: left;
+        /* Đưa tên sản phẩm sang bên trái */
+        transform: none;
+        /* Di chuyển sang bên trái */
+        transition: transform 0.4s ease;
+        /* Thêm hiệu ứng chuyển tiếp */
+        margin-left: 35px;
+    }
+    .move-left1_tintuc {
+        text-align: left;
+        /* Đưa tên sản phẩm sang bên trái */
+        transform: none;
+        /* Di chuyển sang bên trái */
+        transition: none;
+        /* Thêm hiệu ứng chuyển tiếp */
+        margin-left: 0;
+    }
+    .move-left2 {
+        text-align:left;
+        /* Đưa tên sản phẩm sang bên trái */
+        transform: none;
+        /* Di chuyển sang bên trái */
+        transition: none;
+        /* Thêm hiệu ứng chuyển tiếp */
+        margin-left: 0;
+    }
     
+    .demo4 {
+        color: var(--dark-green)!important;
+        transition: none;
+        /* Thêm hiệu ứng chuyển tiếp cho màu sắc */
+    }
+    .demo5 {
+        color: var(--button-color)!important;
+        transition: color 0.4s ease, transform 0.4s ease;
+        /* Thêm hiệu ứng chuyển tiếp cho màu sắc */
+    }
 }
 
 

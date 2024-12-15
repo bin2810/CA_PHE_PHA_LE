@@ -1,6 +1,5 @@
 .page{
     font-size: 13px;
-    font-family: Arial, Helvetica, sans-serif;
     margin-left:90px ;
 }.page .nau{
     color: #BE7352;
@@ -11,7 +10,6 @@
 
 /* Container chính */
 .news-container {
-    font-family: Arial, Helvetica, sans-serif;
     margin: 0 auto;
     width: 90%;
     padding: 20px;
@@ -121,7 +119,6 @@
 /* Phan ten san pham */
 .spnb_topic {
     color: var(--dark-green);
-    font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     font-size: 16px;
     padding: 10px 0 ;
@@ -159,11 +156,48 @@
 .button_buy a:hover{
     background-color: var(--button-color);
 }
+.move-left1 {
+    text-align: left;
+    /* Đưa tên sản phẩm sang bên trái */
+    transform: translateX(-10px);
+    /* Di chuyển sang bên trái */
+    transition: transform 0.4s ease;
+    /* Thêm hiệu ứng chuyển tiếp */
+    margin-left: 35px;
+}
+.move-left1_tintuc {
+    text-align: left;
+    /* Đưa tên sản phẩm sang bên trái */
+    transform: translateX(-10px);
+    /* Di chuyển sang bên trái */
+    transition: transform 0.4s ease;
+    /* Thêm hiệu ứng chuyển tiếp */
+    margin-left: 20px;
+}
+.move-left2 {
+    text-align: left;
+    /* Đưa tên sản phẩm sang bên trái */
+    transform: translateX(-10px);
+    /* Di chuyển sang bên trái */
+    transition: transform 0.4s ease;
+    /* Thêm hiệu ứng chuyển tiếp */
+    margin-left: 25px;
+}
 
+.demo4 {
+    color: var(--white-color)!important;
+    transition: color 0.4s ease, transform 0.4s ease;
+    /* Thêm hiệu ứng chuyển tiếp cho màu sắc */
+}
+.demo5 {
+    color: var(--white-color)!important;
+    transition: color 0.4s ease, transform 0.4s ease;
+    /* Thêm hiệu ứng chuyển tiếp cho màu sắc */
+}
 
 @media only screen and (min-width: 735px) and (max-width:1290px){
     .news-container {
-        font-family: Arial, Helvetica, sans-serif;
+
         margin: 0 auto;
         width: 100%;
         /* padding: 20px; */

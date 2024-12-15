@@ -7,7 +7,7 @@ $(function() {
     }, function() {
         $(".product_information_content", this).addClass("demo1").removeClass("demo2");
         $(".product_information_content", this).removeClass("move-left"); // Bỏ lớp di chuyển
-        $(".product_information_money", this).addClass("demo3").removeClass("demo5sss");
+        $(".product_information_money", this).addClass("demo3").removeClass("demo5");
         $(".product_information_money", this).removeClass("move-left2");
     });
         

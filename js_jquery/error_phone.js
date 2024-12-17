@@ -1,4 +1,4 @@
-$(document).ready(function () {
+$(function () {
     $('.nut_login').click(function () {
         var phoneNumber = $('.nhap_phone').val();
         if (phoneNumber === '') {

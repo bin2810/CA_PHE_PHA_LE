@@ -854,6 +854,9 @@
 
 /* tablet width >= 735 and width <1024px */
 @media only screen and (min-width: 735px ) and (max-width: 1150px){
+    .lock-scroll {
+        overflow: hidden;/*khóa màn hình */
+    }
     .cangiua_nav {
         display: none;
     }
@@ -1408,6 +1411,9 @@
 
 /* mobile width < 740px */
 @media only screen and  (max-width: 734px) {
+    .lock-scroll {
+        overflow: hidden;/*khóa màn hình */
+    }
     .cangiua_nav {
         display: none;
     }

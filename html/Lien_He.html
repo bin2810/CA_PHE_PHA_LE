@@ -13,6 +13,7 @@
     <script src="../js_jquery/login.js"></script>
     <script src="../js_jquery/navbar.js"></script>
     <script src="../js_jquery/Thong_Bao_email_footer.js"></script>
+    <script src="../js_jquery/check_lienhe.js"></script>
     <title>Liên Hệ</title>
 </head>
 
@@ -229,9 +230,13 @@
                         <h2>Liên Hệ</h2>
                         <h4>Vui lòng điền đầy đủ thông tin theo yêu cầu để chúng tôi có thể hỗ trợ quý khách tốt nhất.</h4>
                         <form action="">
-                            <input type="text" name="" class="text_lienhe" placeholder="Họ và Tên*"> <br>
-                            <input type="text" name="" class="text_lienhe" placeholder="Email*"> <br>
-                            <textarea name="" id="" placeholder="Nội Dung"></textarea>
+                            <input type="text" name="" class="text_lienhe" id="name_lienhe" placeholder="Họ và Tên*"> <br>
+                            <span class="error_name_lienhe" style="color: red;"></span>              
+                            <input type="text" name="" class="text_lienhe" id="email_lienhe" placeholder="Email*"> <br>
+                            <span class="error_email_lienhe" style="color: red;"></span>              
+                            <textarea name="" placeholder="Nội Dung" id="noidung_lienhe"  ></textarea>
+                            <span class="error_noidung_lienhe" style="color: red;"></span>              
+
                             <input type="submit" value="Gửi" class="button_lienhe">
                         </form>
                     </div>

@@ -15,6 +15,7 @@
     <script src="../js_jquery/navbar.js"></script>
      <script src="../js_jquery/change_address.js"></script>   <!-- chọn địa chỉ mới -->
     <script src="../js_jquery/Thong_Bao_email_footer.js"></script>
+    <script src="../js_jquery/check_checkout.js"></script>
 
     <title>Kiểm Tra Đơn Hàng</title>
 </head>
@@ -32,6 +33,7 @@
                 <img src="../image/checkout/iconorder.png" alt="">
                 <div class="nhap_address">
                     <input type="text" class="txt-address" id="txt_address" placeholder="Nhập địa chỉ"> 
+                    <span class="error_txt_address" style="color: red;"></span>              
                     <p>
                         <input type="button" id="btn_address_close" value="Chọn địa chỉ này">
                         <input type="button" id="btn_new_address" value="Nhập địa chỉ mới">
@@ -203,7 +205,7 @@
                                 <hr class="hr_checkout">
                             </div>
                             <div class="or-child-left-header-2">
-                                <button id="btn_doi-phuong-thuc" >Đổi Địa Chỉ Giao Hàng</button>
+                                <button id="btn_doi-phuong-thuc" >Thêm Địa Chỉ Giao Hàng</button>
                             </div>
                         </div>
                         <div class="or-child-left-header-under">
@@ -230,8 +232,10 @@
                                     <i class="fa-solid fa-chevron-right" style="font-size: 25px;"></i>   
                                 </div>
                             </div>
-                            <input type="text" class="txt_consignee" id="" placeholder="Tên người nhận">
+                            <input type="text" class="txt_consignee" id="user_name" placeholder="Tên người nhận">
+                            <span class="error_user" style="color: red;"></span>              
                             <input type="number" class="nb_consignee_phone" id="btn-number" placeholder="Số điện thoại">
+                            <span class="error_number" style="color: red;"></span>              
                             <input type="text" class="txt_instruct_consignee" id="" placeholder="Thêm hướng dẫn giao hàng">
                         </div>
                         <div class="or-child-left-header">
@@ -242,7 +246,7 @@
                         </div>
                         <div class="phuongthuctt">
                             <p class="phuongthuctt-item">
-                                <input type="radio" name="thanhtoan" id=""><img src="../image/checkout/tienmat.jpg" alt=""> Tiền mặt
+                                <input type="radio" name="thanhtoan" id="" checked=""><img src="../image/checkout/tienmat.jpg" alt=""> Tiền mặt
                             </p>
 
                             <p class="phuongthuctt-item">
@@ -287,21 +291,21 @@
 
                                 <div class="thanhtien">
                                     <span>Thành tiền:</span>
-                                    <p id="cart-total"> 0 đ</p>
+                                    <p id="cart-total"> 0.000 đ</p>
                                 </div>
                                 <div class="phigiaohang">
                                     <span>Phí giao hàng:</span>
-                                    <p> 18.000 đ</p>
+                                    <p> 0.000 đ</p>
                                 </div>
                                 <div class="freeship">
                                     <span>Bạn có mã Freeship trong mục Ưu đãi</span>
-                                    <p> 0 đ</p>
+                                    <p> 0.000 đ</p>
                                 </div>
                             </div>
                         </div>
                         <div class="tongtien">
-                                    <p>Thành tiền <br>4550đ</p>
-                                    <button class="dathang">Đặt hàng</button>
+                                    <p>Thành tiền <br>0.000đ</p>
+                                    <button id="order_checkout" class="dathang">Đặt hàng</button>
                             </div>
                     </div>
                 </div>

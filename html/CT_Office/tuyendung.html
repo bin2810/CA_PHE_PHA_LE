@@ -14,6 +14,7 @@
     <script type="text/javascript" src="../../js_jquery/tabs.js"></script>
     <script src="../../js_jquery/navbar.js"></script>
     <script src="../../js_jquery/Thong_Bao_email_footer.js"></script>
+    <script src="../../js_jquery/check_lienhe.js"></script>
     <title>Tuyển Dụng</title>
 </head>
 
@@ -430,17 +431,20 @@
                                     <div class="form_content_row">
                                         <div class="form_group">
                                             <p>Họ Tên:</p>
-                                            <label><input type="text" placeholder="Nhập Họ Tên..."></label>
+                                            <label><input type="text" id="name_lienhe" placeholder="Nhập Họ Tên..."></label>
+                                            <span class="error_name_lienhe" style="color: red;"></span>
                                         </div>
                                         <div class="form_group">
                                             <p>Số Điện Thoại:</p>
-                                            <label><input type="text" placeholder="Nhập Số Điện Thoại..."> </label>
+                                            <label><input type="number" id="nhap_phone" placeholder="Nhập Số Điện Thoại..."> </label>
+                                            <span class="error_sdt_lienhe" style="color: red;"></span>
                                         </div>
                                     </div>
                                     <div class="form_content_row">
                                         <div class="form_group">
                                             <p>Email:</p>
-                                            <label><input type="text" placeholder="Nhập Email..."></label>
+                                            <label><input type="text" id="email_lienhe" placeholder="Nhập Email..."></label>
+                                            <span class="error_email_lienhe" style="color: red;"></span>
                                         </div>
                                         <div class="form_group">
                                             <p>Ngày Sinh:</p>
@@ -450,7 +454,8 @@
                                     <div class="form_content_row">
                                         <div class="form_group full_width">
                                             <p>Vị Trí Ứng Tuyển:</p>
-                                            <label><textarea placeholder="Nhập Vị Trí Ứng Tuyển..."></textarea></label>
+                                            <label><textarea placeholder="Nhập Vị Trí Ứng Tuyển..." id="noidung_lienhe"></textarea></label>
+                                            <span class="error_noidung_lienhe" style="color: red;"></span>
                                         </div>
                                     </div>
                                     <div class="form_content_row">
@@ -460,7 +465,7 @@
                                         </div>
                                     </div>
                                     <div class="nut_ungtuyen">
-                                        <a href="#">Ứng Tuyển</a>
+                                        <a href="#" class="button_lienhe"><input type="submit" value="Ứng Tuyển"></a>
                                     </div>
                                 </div>
                             </div>

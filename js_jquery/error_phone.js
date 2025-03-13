@@ -1,5 +1,6 @@
 $(function () {
-    $('.nut_login').click(function () {
+    $('.nut_login').click(function (data) {
+        $('body').append(data);
         var phoneNumber = $('.nhap_phone').val();
         if (phoneNumber === '') {
             $('.error').text('Số điện thoại không được để trống').show();
@@ -10,8 +11,8 @@ $(function () {
             return false;
         }
         $('.error').hide();
-        
         $("#lop_phu_login").hide();
+        $('body').removeClass('lock-scroll');
 
     });
 });
